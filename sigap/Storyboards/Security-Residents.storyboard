@@ -3,27 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Residents-->
-        <scene sceneID="3ik-l0-uCn">
-            <objects>
-                <viewController id="f9L-k6-KDU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gr9-vq-LnB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="uA3-Xe-vOH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Residents" id="EWa-uG-0DX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cpr-I9-ZlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-588" y="-479"/>
-        </scene>
         <!--Residents-->
         <scene sceneID="GDA-lz-dMB">
             <objects>
@@ -37,12 +20,49 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="f9L-k6-KDU" kind="relationship" relationship="rootViewController" id="5Kb-qD-qzm"/>
+                        <segue destination="GS7-0g-bWD" kind="relationship" relationship="rootViewController" id="h19-4Z-9g0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq0-VS-L5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1336" y="-479"/>
+            <point key="canvasLocation" x="-2175" y="-739"/>
+        </scene>
+        <!--Residents-->
+        <scene sceneID="iNh-Lj-0TI">
+            <objects>
+                <tableViewController id="GS7-0g-bWD" customClass="SecurityResidentsTableViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8qj-EQ-3PE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="jjl-7C-TTr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="residentId" id="oD3-QS-PVz">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oD3-QS-PVz" id="6Bv-sK-tIO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GS7-0g-bWD" id="Wrv-Pj-RXf"/>
+                            <outlet property="delegate" destination="GS7-0g-bWD" id="yTF-EI-SzT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Residents" id="UBJ-1I-hPN"/>
+                    <connections>
+                        <outlet property="searchBar" destination="jjl-7C-TTr" id="iJh-JN-GV8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bo-vs-FUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1419" y="-739"/>
         </scene>
     </scenes>
     <resources>

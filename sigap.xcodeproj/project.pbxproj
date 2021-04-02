@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		29117C462614827C00D5D499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C452614827C00D5D499 /* AppDelegate.swift */; };
 		29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C472614827C00D5D499 /* SceneDelegate.swift */; };
-		29117C4A2614827C00D5D499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C492614827C00D5D499 /* ViewController.swift */; };
 		29117C4F2614827D00D5D499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29117C4E2614827D00D5D499 /* Assets.xcassets */; };
 		29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29117C502614827D00D5D499 /* LaunchScreen.storyboard */; };
 		7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */; };
@@ -25,13 +24,14 @@
 		7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C0F2617112F00977F78 /* AuthViewController.swift */; };
 		7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C122617117B00977F78 /* AuthNavigationController.swift */; };
 		7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C162617166800977F78 /* AuthCustomButton.swift */; };
+		7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */; };
+		7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29117C422614827C00D5D499 /* sigap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sigap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29117C452614827C00D5D499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29117C472614827C00D5D499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29117C492614827C00D5D499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29117C4E2614827D00D5D499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29117C512614827D00D5D499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29117C532614827D00D5D499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		7E3A0C0F2617112F00977F78 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7E3A0C122617117B00977F78 /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
 		7E3A0C162617166800977F78 /* AuthCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCustomButton.swift; sourceTree = "<group>"; };
+		7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityResidentsTableViewController.swift; sourceTree = "<group>"; };
+		7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,17 +82,15 @@
 		29117C442614827C00D5D499 /* sigap */ = {
 			isa = PBXGroup;
 			children = (
+				7E3A0C3C261758D500977F78 /* API */,
+				7E3A0C1C26173F9400977F78 /* Security */,
+				7E3A0C1A26172D1B00977F78 /* Authentication */,
 				7E3A0BEE2616E84D00977F78 /* Storyboards */,
 				29117C452614827C00D5D499 /* AppDelegate.swift */,
 				29117C472614827C00D5D499 /* SceneDelegate.swift */,
-				29117C492614827C00D5D499 /* ViewController.swift */,
 				29117C4E2614827D00D5D499 /* Assets.xcassets */,
 				29117C502614827D00D5D499 /* LaunchScreen.storyboard */,
 				29117C532614827D00D5D499 /* Info.plist */,
-				7E3A0C122617117B00977F78 /* AuthNavigationController.swift */,
-				7E3A0C162617166800977F78 /* AuthCustomButton.swift */,
-				7E3A0C0F2617112F00977F78 /* AuthViewController.swift */,
-				7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */,
 			);
 			path = sigap;
 			sourceTree = "<group>";
@@ -109,6 +109,33 @@
 				7E3A0C082616F14600977F78 /* User-Settings.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7E3A0C1A26172D1B00977F78 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7E3A0C122617117B00977F78 /* AuthNavigationController.swift */,
+				7E3A0C162617166800977F78 /* AuthCustomButton.swift */,
+				7E3A0C0F2617112F00977F78 /* AuthViewController.swift */,
+				7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7E3A0C1C26173F9400977F78 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		7E3A0C3C261758D500977F78 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
-				29117C4A2614827C00D5D499 /* ViewController.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
+				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
 				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
