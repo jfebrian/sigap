@@ -10,9 +10,17 @@
 		29117C462614827C00D5D499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C452614827C00D5D499 /* AppDelegate.swift */; };
 		29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C472614827C00D5D499 /* SceneDelegate.swift */; };
 		29117C4A2614827C00D5D499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C492614827C00D5D499 /* ViewController.swift */; };
-		29117C4D2614827C00D5D499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29117C4B2614827C00D5D499 /* Main.storyboard */; };
 		29117C4F2614827D00D5D499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29117C4E2614827D00D5D499 /* Assets.xcassets */; };
 		29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29117C502614827D00D5D499 /* LaunchScreen.storyboard */; };
+		7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */; };
+		7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */; };
+		7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */; };
+		7E3A0BF82616EA8E00977F78 /* Security.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF72616EA8E00977F78 /* Security.storyboard */; };
+		7E3A0BFC2616ED9D00977F78 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BFB2616ED9D00977F78 /* Authentication.storyboard */; };
+		7E3A0C002616F12900977F78 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BFF2616F12900977F78 /* User.storyboard */; };
+		7E3A0C032616F13500977F78 /* User-Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C022616F13500977F78 /* User-Contacts.storyboard */; };
+		7E3A0C062616F13F00977F78 /* User-Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */; };
+		7E3A0C092616F14600977F78 /* User-Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C082616F14600977F78 /* User-Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +28,18 @@
 		29117C452614827C00D5D499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29117C472614827C00D5D499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29117C492614827C00D5D499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29117C4C2614827C00D5D499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29117C4E2614827D00D5D499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29117C512614827D00D5D499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29117C532614827D00D5D499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Residents.storyboard"; sourceTree = "<group>"; };
+		7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-CCTV.storyboard"; sourceTree = "<group>"; };
+		7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Announcements.storyboard"; sourceTree = "<group>"; };
+		7E3A0BF72616EA8E00977F78 /* Security.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Security.storyboard; sourceTree = "<group>"; };
+		7E3A0BFB2616ED9D00977F78 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		7E3A0BFF2616F12900977F78 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		7E3A0C022616F13500977F78 /* User-Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Contacts.storyboard"; sourceTree = "<group>"; };
+		7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Announcements.storyboard"; sourceTree = "<group>"; };
+		7E3A0C082616F14600977F78 /* User-Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Settings.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,31 @@
 		29117C442614827C00D5D499 /* sigap */ = {
 			isa = PBXGroup;
 			children = (
+				7E3A0BEE2616E84D00977F78 /* Storyboards */,
 				29117C452614827C00D5D499 /* AppDelegate.swift */,
 				29117C472614827C00D5D499 /* SceneDelegate.swift */,
 				29117C492614827C00D5D499 /* ViewController.swift */,
-				29117C4B2614827C00D5D499 /* Main.storyboard */,
 				29117C4E2614827D00D5D499 /* Assets.xcassets */,
 				29117C502614827D00D5D499 /* LaunchScreen.storyboard */,
 				29117C532614827D00D5D499 /* Info.plist */,
 			);
 			path = sigap;
+			sourceTree = "<group>";
+		};
+		7E3A0BEE2616E84D00977F78 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7E3A0BF72616EA8E00977F78 /* Security.storyboard */,
+				7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */,
+				7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */,
+				7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */,
+				7E3A0BFB2616ED9D00977F78 /* Authentication.storyboard */,
+				7E3A0BFF2616F12900977F78 /* User.storyboard */,
+				7E3A0C022616F13500977F78 /* User-Contacts.storyboard */,
+				7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */,
+				7E3A0C082616F14600977F78 /* User-Settings.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +157,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */,
+				7E3A0BFC2616ED9D00977F78 /* Authentication.storyboard in Resources */,
+				7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */,
 				29117C4F2614827D00D5D499 /* Assets.xcassets in Resources */,
-				29117C4D2614827C00D5D499 /* Main.storyboard in Resources */,
+				7E3A0BF82616EA8E00977F78 /* Security.storyboard in Resources */,
+				7E3A0C032616F13500977F78 /* User-Contacts.storyboard in Resources */,
+				7E3A0C062616F13F00977F78 /* User-Announcements.storyboard in Resources */,
+				7E3A0C002616F12900977F78 /* User.storyboard in Resources */,
+				7E3A0C092616F14600977F78 /* User-Settings.storyboard in Resources */,
+				7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */,
+				7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		29117C4B2614827C00D5D499 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29117C4C2614827C00D5D499 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		29117C502614827D00D5D499 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,16 +319,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3B9734488N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ronyfhebrian.sigap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SixHansips.sigap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,16 +338,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3B9734488N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ronyfhebrian.sigap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SixHansips.sigap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
