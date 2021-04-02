@@ -21,6 +21,10 @@
 		7E3A0C032616F13500977F78 /* User-Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C022616F13500977F78 /* User-Contacts.storyboard */; };
 		7E3A0C062616F13F00977F78 /* User-Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */; };
 		7E3A0C092616F14600977F78 /* User-Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C082616F14600977F78 /* User-Settings.storyboard */; };
+		7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */; };
+		7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C0F2617112F00977F78 /* AuthViewController.swift */; };
+		7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C122617117B00977F78 /* AuthNavigationController.swift */; };
+		7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C162617166800977F78 /* AuthCustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		7E3A0C022616F13500977F78 /* User-Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Contacts.storyboard"; sourceTree = "<group>"; };
 		7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Announcements.storyboard"; sourceTree = "<group>"; };
 		7E3A0C082616F14600977F78 /* User-Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "User-Settings.storyboard"; sourceTree = "<group>"; };
+		7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCustomTextField.swift; sourceTree = "<group>"; };
+		7E3A0C0F2617112F00977F78 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7E3A0C122617117B00977F78 /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
+		7E3A0C162617166800977F78 /* AuthCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 				29117C4E2614827D00D5D499 /* Assets.xcassets */,
 				29117C502614827D00D5D499 /* LaunchScreen.storyboard */,
 				29117C532614827D00D5D499 /* Info.plist */,
+				7E3A0C122617117B00977F78 /* AuthNavigationController.swift */,
+				7E3A0C162617166800977F78 /* AuthCustomButton.swift */,
+				7E3A0C0F2617112F00977F78 /* AuthViewController.swift */,
+				7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */,
 			);
 			path = sigap;
 			sourceTree = "<group>";
@@ -177,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
 				29117C4A2614827C00D5D499 /* ViewController.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
+				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
+				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
