@@ -29,6 +29,8 @@
 		7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */; };
 		7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */; };
 		7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */; };
+		7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */; };
+		7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewCell.swift; sourceTree = "<group>"; };
 		7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvCustomImageView.swift; sourceTree = "<group>"; };
+		7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */,
 				7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */,
 				7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */,
+				7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */,
+				7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -227,9 +233,11 @@
 			files = (
 				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
+				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
 				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
+				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,
 				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
