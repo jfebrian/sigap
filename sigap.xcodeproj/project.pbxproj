@@ -26,6 +26,9 @@
 		7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C162617166800977F78 /* AuthCustomButton.swift */; };
 		7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */; };
 		7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */; };
+		7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */; };
+		7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */; };
+		7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		7E3A0C162617166800977F78 /* AuthCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCustomButton.swift; sourceTree = "<group>"; };
 		7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityResidentsTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
+		7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewCell.swift; sourceTree = "<group>"; };
+		7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewController.swift; sourceTree = "<group>"; };
+		7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvCustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */,
+				7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */,
+				7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */,
+				7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -219,11 +228,14 @@
 				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
+				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
 				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
+				7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

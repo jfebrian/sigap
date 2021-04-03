@@ -82,7 +82,7 @@ class SecurityResidentsTableViewController: UITableViewController, UISearchBarDe
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: residentIdentifier)! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: residentIdentifier)!
         
         cell.textLabel?.text = residents[letters[indexPath.section]]![indexPath.row]
         

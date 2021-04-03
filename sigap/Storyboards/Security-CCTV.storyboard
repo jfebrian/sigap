@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yIK-FQ-qgp">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CCTV-->
-        <scene sceneID="QL2-NT-JWa">
-            <objects>
-                <viewController id="9bf-bn-eHb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fah-yw-0bt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ATI-Tu-xZ5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="CCTV" id="BjP-C9-fmk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z7L-kL-MDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1200" y="879.91071428571422"/>
-        </scene>
         <!--CCTV-->
         <scene sceneID="uTH-IG-SrI">
             <objects>
@@ -32,21 +16,81 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1jg-lm-vMn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9bf-bn-eHb" kind="relationship" relationship="rootViewController" id="6Yu-QT-Z2s"/>
+                        <segue destination="N4r-Am-CSh" kind="relationship" relationship="rootViewController" id="uI0-B6-oYP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhC-S4-nCB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2110.144927536232" y="879.91071428571422"/>
         </scene>
+        <!--CCTV-->
+        <scene sceneID="7Dx-L7-bpM">
+            <objects>
+                <tableViewController id="N4r-Am-CSh" customClass="SecurityCctvTableViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t1P-Rm-7Hw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cctvId" id="wnw-AU-ZQE" customClass="SecurityCctvTableViewCell" customModule="sigap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="280.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wnw-AU-ZQE" id="2oW-LO-Qal">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="280.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-e3-6Lg" customClass="SecurityCctvCustomImageView" customModule="sigap" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="10" width="335" height="260.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="260" id="u3F-db-J7c"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-fB-hqg">
+                                            <rect key="frame" x="167.5" y="131" width="40" height="19"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" name="color_label"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <size key="shadowOffset" width="-1" height="1"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="aaU-e3-6Lg" secondAttribute="bottom" constant="10" id="Ac1-S1-2Qz"/>
+                                        <constraint firstItem="Ggs-fB-hqg" firstAttribute="centerY" secondItem="2oW-LO-Qal" secondAttribute="centerY" id="Bkm-kE-k51"/>
+                                        <constraint firstAttribute="trailing" secondItem="aaU-e3-6Lg" secondAttribute="trailing" constant="20" id="Xus-dU-ArJ"/>
+                                        <constraint firstItem="aaU-e3-6Lg" firstAttribute="leading" secondItem="2oW-LO-Qal" secondAttribute="leading" constant="20" id="pGo-uH-wYq"/>
+                                        <constraint firstItem="aaU-e3-6Lg" firstAttribute="top" secondItem="2oW-LO-Qal" secondAttribute="top" constant="10" id="usP-Gs-Czo"/>
+                                        <constraint firstItem="Ggs-fB-hqg" firstAttribute="centerX" secondItem="2oW-LO-Qal" secondAttribute="centerX" id="vi0-FP-mv3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cctvImage" destination="aaU-e3-6Lg" id="dzQ-aj-JI4"/>
+                                    <outlet property="cctvLabel" destination="Ggs-fB-hqg" id="G5x-6l-Uhg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N4r-Am-CSh" id="JmT-hP-TyX"/>
+                            <outlet property="delegate" destination="N4r-Am-CSh" id="uMT-mi-XXY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CCTV" id="9o2-9W-Ajp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31w-Wx-Rm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1245" y="880"/>
+        </scene>
     </scenes>
     <resources>
         <image name="tv" catalog="system" width="128" height="97"/>
+        <namedColor name="color_label">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
