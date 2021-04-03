@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="00v-jy-TBQ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -8,15 +8,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User View Controller-->
         <scene sceneID="z6l-Wr-cU4">
             <objects>
-                <viewController id="00v-jy-TBQ" sceneMemberID="viewController">
+                <viewController id="00v-jy-TBQ" customClass="UserViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptF-Nv-p6i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBI-0f-ocz">
+                                <rect key="frame" x="32" y="92" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="an1-3k-AQj"/>
+                                    <constraint firstAttribute="height" constant="45" id="gR6-uB-bsT"/>
+                                </constraints>
+                                <state key="normal" image="ic_settings"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCV-CU-rDG">
+                                <rect key="frame" x="313" y="92" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cBj-wO-QUN"/>
+                                    <constraint firstAttribute="width" constant="45" id="e9h-SQ-tbq"/>
+                                </constraints>
+                                <state key="normal" image="ic_contacts"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeb-0A-hOB">
+                                <rect key="frame" x="55" y="282" width="280" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="7DX-Rc-uAz"/>
+                                    <constraint firstAttribute="height" constant="280" id="xFQ-ER-rTK"/>
+                                </constraints>
+                                <state key="normal" image="img_emergencyButton"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="J5B-VX-sPc"/>
                         <color key="backgroundColor" name="color_Background"/>
+                        <constraints>
+                            <constraint firstItem="xeb-0A-hOB" firstAttribute="centerX" secondItem="ptF-Nv-p6i" secondAttribute="centerX" id="3Jd-hD-PjM"/>
+                            <constraint firstItem="fCV-CU-rDG" firstAttribute="top" secondItem="J5B-VX-sPc" secondAttribute="top" constant="48" id="fki-Dm-tHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fCV-CU-rDG" secondAttribute="trailing" constant="32" id="iZb-VK-M3q"/>
+                            <constraint firstItem="wBI-0f-ocz" firstAttribute="top" secondItem="J5B-VX-sPc" secondAttribute="top" constant="48" id="m5k-vB-In0"/>
+                            <constraint firstItem="xeb-0A-hOB" firstAttribute="centerY" secondItem="ptF-Nv-p6i" secondAttribute="centerY" id="od9-iK-fhd"/>
+                            <constraint firstItem="wBI-0f-ocz" firstAttribute="leading" secondItem="J5B-VX-sPc" secondAttribute="leading" constant="32" id="w5O-dC-p5f"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JqP-oS-z7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,6 +59,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_contacts" width="48" height="48"/>
+        <image name="ic_settings" width="33.333332061767578" height="33"/>
+        <image name="img_emergencyButton" width="280" height="280"/>
         <namedColor name="color_Background">
             <color red="0.078431372549019607" green="0.074509803921568626" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
