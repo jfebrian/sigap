@@ -34,6 +34,7 @@
 		7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C542618568F00977F78 /* UserViewController.swift */; };
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
+		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		7E3A0C542618568F00977F78 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
+		7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				7E3A0C542618568F00977F78 /* UserViewController.swift */,
 				7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */,
 				7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */,
+				7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
 				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
 				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
 				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,

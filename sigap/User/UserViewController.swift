@@ -33,6 +33,16 @@ class UserViewController: UIViewController {
         setupCard()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func setupCard(){
         visualEffectView = UIVisualEffectView()
         visualEffectView.frame = self.view.frame
@@ -53,6 +63,8 @@ class UserViewController: UIViewController {
         
         cardViewController.handleArea.addGestureRecognizer(tapGestureRecognizer)
         cardViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
+        
+        visualEffectView.isUserInteractionEnabled = false
         
     }
     
