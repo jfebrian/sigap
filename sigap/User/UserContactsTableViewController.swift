@@ -23,6 +23,9 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         
         searchBar.delegate = self
         
+        let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
+        textFieldInsideSearchBar?.textColor = UIColor(named: "color_labelSecondary")
+        
     }
     
     func initDummyData(){
@@ -82,6 +85,7 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: contactIdentifier)!
         
         cell.textLabel?.text = contacts[sections[indexPath.section]]![indexPath.row]
+        cell.textLabel?.textColor = UIColor(named: "color_label")
         
         return cell
     }
@@ -109,5 +113,35 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         processData(filteredData)
         
         self.tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        let contact = contacts[sections[indexPath.section]]![indexPath.row]
+        let config = UIContextMenuConfiguration(identifier: nil, previewProvider: {
+            return ContactViewController(name: contact)
+        }) { _ in
+            let message = UIAction(
+                title: "Message",
+                image: UIImage(systemName: "message")) {_ in
+                
+            }
+            
+            let call = UIAction(
+                title: "Call",
+                image: UIImage(systemName: "phone")) {_ in
+                
+            }
+            
+            let share = UIAction(
+                title: "Share",
+                image: UIImage(systemName: "square.and.arrow.up")) {_ in
+                
+            }
+            
+            let menu = UIMenu(title: "", image: nil, identifier: nil, options: [], children: [message, call, share])
+            
+            return menu
+        }
+        return config
     }
 }

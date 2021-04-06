@@ -35,6 +35,7 @@
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
 		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
+		7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
 		7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsTableViewController.swift; sourceTree = "<group>"; };
+		7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */,
+				7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
 				7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
+				7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */,
 				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
 				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
