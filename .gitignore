@@ -1,4 +1,5 @@
 .DS_Store
 .Trashes
+*.xcuserstate
 xcuserdata/
-sigap/Info.plist
+Info.plist
