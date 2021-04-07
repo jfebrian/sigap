@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="LLO-1H-Rc3">
-                                <rect key="frame" x="27.5" y="248.5" width="320" height="170"/>
+                                <rect key="frame" x="27.5" y="245.5" width="320" height="176"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your area code!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-It-VO5">
                                         <rect key="frame" x="40" y="0.0" width="240" height="21.5"/>
@@ -29,15 +30,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goK-ay-e36">
-                                        <rect key="frame" x="0.0" y="53.5" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="53.5" width="320" height="40"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="MWk-nV-IrN"/>
+                                            <constraint firstAttribute="height" constant="40" id="hae-zS-7yI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The area code is strictly invitational, please ask your security department for the code!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geE-ys-bJL">
-                                        <rect key="frame" x="40" y="119.5" width="240" height="50.5"/>
+                                        <rect key="frame" x="40" y="125.5" width="240" height="50.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="qIy-xG-ofa"/>
                                         </constraints>
@@ -88,7 +91,7 @@
                                                 <color key="textColor" name="color_label"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taman Setia Budi Indah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-Xx-EZB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-Xx-EZB">
                                                 <rect key="frame" x="0.0" y="33" width="300" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="DBd-xk-cJK"/>
@@ -99,7 +102,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_areaPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="IKs-px-Zq8">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IKs-px-Zq8">
                                         <rect key="frame" x="0.0" y="86" width="320" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="320" id="491-eV-cc5"/>
@@ -155,6 +158,7 @@
                     <navigationItem key="navigationItem" id="hHE-Ip-uc3"/>
                     <connections>
                         <outlet property="areaImage" destination="IKs-px-Zq8" id="JWq-G1-q6p"/>
+                        <outlet property="areaNameLabel" destination="qkG-Xx-EZB" id="zNt-Bf-5rV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70H-uY-hTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -514,12 +518,11 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="color_label"/>
     <resources>
-        <image name="img_areaPlaceholder" width="319" height="303"/>
         <namedColor name="color_Background">
-            <color red="0.078431372549019607" green="0.074509803921568626" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.078000001609325409" green="0.075000002980232239" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_ButtonGlyph">
-            <color red="0.0" green="0.61960784313725492" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.62000000476837158" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_buttonLabel">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -528,7 +531,10 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_labelSecondary">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

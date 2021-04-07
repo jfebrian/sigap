@@ -11,6 +11,7 @@
 		29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C472614827C00D5D499 /* SceneDelegate.swift */; };
 		29117C4F2614827D00D5D499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29117C4E2614827D00D5D499 /* Assets.xcassets */; };
 		29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29117C502614827D00D5D499 /* LaunchScreen.storyboard */; };
+		7E33D726261DB1BF00F9B81B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E33D725261DB1BF00F9B81B /* CloudKit.framework */; };
 		7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */; };
 		7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */; };
 		7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */; };
@@ -45,6 +46,8 @@
 		29117C4E2614827D00D5D499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29117C512614827D00D5D499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29117C532614827D00D5D499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E33D722261DB1BC00F9B81B /* sigap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sigap.entitlements; sourceTree = "<group>"; };
+		7E33D725261DB1BF00F9B81B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Residents.storyboard"; sourceTree = "<group>"; };
 		7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-CCTV.storyboard"; sourceTree = "<group>"; };
 		7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Announcements.storyboard"; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E33D726261DB1BF00F9B81B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,7 @@
 			children = (
 				29117C442614827C00D5D499 /* sigap */,
 				29117C432614827C00D5D499 /* Products */,
+				7E33D724261DB1BF00F9B81B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +107,7 @@
 		29117C442614827C00D5D499 /* sigap */ = {
 			isa = PBXGroup;
 			children = (
+				7E33D722261DB1BC00F9B81B /* sigap.entitlements */,
 				7E3A0C3C261758D500977F78 /* API */,
 				7E3A0C1C26173F9400977F78 /* Security */,
 				7E3A0C1A26172D1B00977F78 /* Authentication */,
@@ -114,6 +120,14 @@
 				29117C532614827D00D5D499 /* Info.plist */,
 			);
 			path = sigap;
+			sourceTree = "<group>";
+		};
+		7E33D724261DB1BF00F9B81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E33D725261DB1BF00F9B81B /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7E3A0BEE2616E84D00977F78 /* Storyboards */ = {
@@ -410,8 +424,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sigap/sigap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7BXMQ2C5C2;
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,8 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sigap/sigap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7BXMQ2C5C2;
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
