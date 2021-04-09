@@ -11,7 +11,7 @@
         <!--User View Controller-->
         <scene sceneID="z6l-Wr-cU4">
             <objects>
-                <viewController id="00v-jy-TBQ" customClass="UserViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userSb" useStoryboardIdentifierAsRestorationIdentifier="YES" id="00v-jy-TBQ" customClass="UserViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptF-Nv-p6i">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
         <image name="ic_settings" width="33.333332061767578" height="33"/>
         <image name="img_emergencyButton" width="280" height="280"/>
         <namedColor name="color_Background">
-            <color red="0.078431372549019607" green="0.074509803921568626" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.078000001609325409" green="0.075000002980232239" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -37,6 +37,9 @@
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
 		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
 		7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */; };
+		7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */; };
+		7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F13E261EE7DD0040DE45 /* DataModel.swift */; };
+		7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
 		7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Authentication-Profile.storyboard"; sourceTree = "<group>"; };
+		7EE5F13E261EE7DD0040DE45 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		29117C442614827C00D5D499 /* sigap */ = {
 			isa = PBXGroup;
 			children = (
+				7EE5F13D261EE7C60040DE45 /* Model */,
 				7E33D722261DB1BC00F9B81B /* sigap.entitlements */,
 				7E3A0C3C261758D500977F78 /* API */,
 				7E3A0C1C26173F9400977F78 /* Security */,
@@ -138,6 +145,7 @@
 				7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */,
 				7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */,
 				7E3A0BFB2616ED9D00977F78 /* Authentication.storyboard */,
+				7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */,
 				7E3A0BFF2616F12900977F78 /* User.storyboard */,
 				7E3A0C022616F13500977F78 /* User-Contacts.storyboard */,
 				7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */,
@@ -153,6 +161,7 @@
 				7E3A0C162617166800977F78 /* AuthCustomButton.swift */,
 				7E3A0C0F2617112F00977F78 /* AuthViewController.swift */,
 				7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */,
+				7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -188,6 +197,14 @@
 				7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		7EE5F13D261EE7C60040DE45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EE5F13E261EE7DD0040DE45 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,7 @@
 				7E3A0C092616F14600977F78 /* User-Settings.storyboard in Resources */,
 				7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */,
 				7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */,
+				7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +301,11 @@
 				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
+				7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */,
 				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
 				7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */,
+				7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
