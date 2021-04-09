@@ -19,7 +19,7 @@ class AuthProfileViewController: UIViewController {
     @IBOutlet weak var noLabel4: UITextField!
     @IBOutlet weak var noLabel5: UITextField!
     
-    private let privateDatabase = CKContainer.default().privateCloudDatabase
+    private let publicDatabase = CKContainer.default().publicCloudDatabase
     
     struct profileInfo {
         var phoneNumber: String
@@ -165,7 +165,7 @@ class AuthProfileViewController: UIViewController {
                 print("error: \(error!.localizedDescription)")
             }
         }
-        privateDatabase.add(modifyRecord)
+        publicDatabase.add(modifyRecord)
     }
 }
 

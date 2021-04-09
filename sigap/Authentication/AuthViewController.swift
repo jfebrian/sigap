@@ -11,7 +11,6 @@ import AuthenticationServices
 
 class AuthViewController: UIViewController, UITextFieldDelegate  {
     
-    private let privateDatabase = CKContainer.default().privateCloudDatabase
     private let publicDatabase = CKContainer.default().publicCloudDatabase
     
     @IBOutlet weak var areaCodeTextField: UITextField!
@@ -185,6 +184,7 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         guard let code = self.code else { return }
+        guard let area = self.area else { return }
         var existNumber = false
         switch authorization.credential {
         case let credentials as ASAuthorizationAppleIDCredential:
@@ -194,7 +194,9 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                 let record = CKRecord(recordType: "UserInfo", recordID: CKRecord.ID(recordName: userID))
                 record["firstName"] = firstName
                 record["lastName"] = lastName
-                privateDatabase.save(record) { (_, error) in
+                let areaReference = CKRecord.Reference(recordID: area.record!.recordID, action: .deleteSelf)
+                record["area"] = areaReference
+                publicDatabase.save(record) { (_, error) in
                     if error != nil {
                         print("error: \(error!.localizedDescription)")
                     } else {
@@ -206,7 +208,7 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                     }
                 }
             } else {
-                privateDatabase.fetch(withRecordID: CKRecord.ID(recordName: userID)) { (record, error) in
+                publicDatabase.fetch(withRecordID: CKRecord.ID(recordName: userID)) { (record, error) in
                     if error != nil {
                         print("error: \(error!.localizedDescription)")
                     } else if let fetchedInfo = record {
