@@ -23,17 +23,22 @@ class SecurityResidentsTableViewController: UITableViewController, UISearchBarDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchData()
         
         let control = UIRefreshControl()
         control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         tableView.refreshControl = control
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+            tapGesture.cancelsTouchesInView = false
+            tableView.addGestureRecognizer(tapGesture)
         
         searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fetchData()
+        
     }
     
     func fetchData(){
@@ -100,6 +105,10 @@ class SecurityResidentsTableViewController: UITableViewController, UISearchBarDe
         }
     }
 
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
@@ -139,7 +148,7 @@ class SecurityResidentsTableViewController: UITableViewController, UISearchBarDe
         
         filteredData = residentsDictionary.mapValues {
             $0.filter { data in
-                return smartSearchMatcher.matches(data.address)
+                return smartSearchMatcher.matches(data.address) || smartSearchMatcher.matches(data.firstName) || smartSearchMatcher.matches(data.lastName)
             }
         }
         
@@ -239,6 +248,7 @@ class SecurityResidentsTableViewController: UITableViewController, UISearchBarDe
             let destination = segue.destination as! SecurityResidentDetailsViewController
             let origin = sender as! UserInfo
             destination.resident = origin
+            destination.sender = self
         }
     }
     

@@ -28,6 +28,10 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
         textFieldInsideSearchBar?.textColor = UIColor(named: "color_labelSecondary")
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+            tapGesture.cancelsTouchesInView = false
+            tableView.addGestureRecognizer(tapGesture)
+        
         let control = UIRefreshControl()
         control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         tableView.refreshControl = control
@@ -46,8 +50,13 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         self.present(alert, animated: true, completion: nil)
     }
     
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
     func fetchData(){
         let query = CKQuery(recordType: "Contacts", predicate: NSPredicate(value: true))
+        query.sortDescriptors = [NSSortDescriptor(key: "modificationDate", ascending: true)]
         let queryOperation = CKQueryOperation(query: query)
         queryOperation.recordFetchedBlock = fetchContacts
         publicDatabase.add(queryOperation)
@@ -71,13 +80,16 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
     
     func loadContact(_ contact: Contact){
         DispatchQueue.main.async {
-            self.contacts.append(contact)
-            if self.contactDictionary[contact.category] == nil {
-                self.contactDictionary[contact.category] = []
-                self.sections.append(contact.category)
+            let duplicate = self.contacts.contains { $0.name == contact.name }
+            if !duplicate {
+                self.contacts.append(contact)
+                if self.contactDictionary[contact.category] == nil {
+                    self.contactDictionary[contact.category] = []
+                    self.sections.append(contact.category)
+                }
+                self.contactDictionary[contact.category]?.append(contact)
+                self.tableView.reloadData()
             }
-            self.contactDictionary[contact.category]?.append(contact)
-            self.tableView.reloadData()
         }
     }
     
@@ -146,7 +158,7 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         
         filteredData = contactDictionary.mapValues {
             $0.filter { data in
-                return smartSearchMatcher.matches(data.name)
+                return smartSearchMatcher.matches(data.name) || smartSearchMatcher.matches(data.category)
             }
         }
         

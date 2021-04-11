@@ -36,7 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window?.rootViewController = navigationLoginVC
         } else {
             if !isSecurity {
-                if UserDefaults.standard.object(forKey: "userPhoneNumber") != nil {
+                if UserDefaults.standard.bool(forKey: "isRegistered") {
                     let storyboard : UIStoryboard = UIStoryboard(name: "User", bundle: nil)
                     let userHomeVC: UserViewController = storyboard.instantiateViewController(withIdentifier: "userSb") as! UserViewController
                     let navigationHomeVC = UINavigationController(rootViewController: userHomeVC)

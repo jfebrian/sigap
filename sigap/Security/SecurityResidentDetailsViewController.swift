@@ -23,10 +23,16 @@ class SecurityResidentDetailsViewController: UIViewController {
     let publicDatabase = CKContainer.default().publicCloudDatabase
     
     var resident: UserInfo?
+    var sender: SecurityResidentsTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        sender?.fetchData()
     }
     
     func setupView() {

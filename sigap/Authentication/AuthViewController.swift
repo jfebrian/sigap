@@ -222,17 +222,8 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                     if error != nil {
                         print("error: \(error!.localizedDescription)")
                     } else {
-                        let firstName = userInfo.value(forKey: "firstName")
-                        let lastName = userInfo.value(forKey: "lastName")
-                        let number = userInfo.value(forKey: "number")
-                        let address = userInfo.value(forKey: "address")
-                        
                         UserDefaults.standard.set(userID, forKey: "userInfoID")
-                        UserDefaults.standard.set(areaReference.recordID.recordName, forKey: "areaInfoID")
-                        UserDefaults.standard.set(firstName, forKey: "userFirstName")
-                        UserDefaults.standard.set(lastName, forKey: "userLastName")
-                        UserDefaults.standard.set(number, forKey: "userPhoneNumber")
-                        UserDefaults.standard.set(address, forKey: "userAddress")
+                        UserDefaults.standard.set(true, forKey: "isRegistered")
                         UserDefaults.standard.setValue(true, forKey: "isLogin")
                         UserDefaults.standard.set(code.isSecurity, forKey: "isSecurity")
                     }
