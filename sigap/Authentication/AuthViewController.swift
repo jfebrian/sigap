@@ -203,21 +203,32 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                         UserDefaults.standard.set(firstName, forKey: "userFirstName")
                         UserDefaults.standard.set(lastName, forKey: "userLastName")
                         UserDefaults.standard.set(record.recordID.recordName, forKey: "userInfoID")
+                        UserDefaults.standard.set(areaReference.recordID.recordName, forKey: "areaInfoID")
                         UserDefaults.standard.set(true, forKey: "isLogin")
                         UserDefaults.standard.set(code.isSecurity, forKey: "isSecurity")
                     }
                 }
             } else {
-                publicDatabase.fetch(withRecordID: CKRecord.ID(recordName: userID)) { (record, error) in
+                let recordID = CKRecord.ID(recordName: userID)
+                let userInfo = CKRecord(recordType: "UserInfo", recordID: recordID)
+                let areaReference = CKRecord.Reference(recordID: area.record!.recordID, action: .deleteSelf)
+                
+                userInfo.setValue(areaReference, forKey: "area")
+
+                let modifyRecord = CKModifyRecordsOperation(recordsToSave: [userInfo], recordIDsToDelete: nil)
+                modifyRecord.savePolicy = CKModifyRecordsOperation.RecordSavePolicy.changedKeys
+                modifyRecord.qualityOfService = QualityOfService.userInitiated
+                modifyRecord.modifyRecordsCompletionBlock = { savedRecords, deletedRecordIDs, error in
                     if error != nil {
                         print("error: \(error!.localizedDescription)")
-                    } else if let fetchedInfo = record {
-                        let firstName = fetchedInfo.value(forKey: "firstName")
-                        let lastName = fetchedInfo.value(forKey: "lastName")
-                        let number = fetchedInfo.value(forKey: "number")
-                        let address = fetchedInfo.value(forKey: "address")
+                    } else {
+                        let firstName = userInfo.value(forKey: "firstName")
+                        let lastName = userInfo.value(forKey: "lastName")
+                        let number = userInfo.value(forKey: "number")
+                        let address = userInfo.value(forKey: "address")
                         
                         UserDefaults.standard.set(userID, forKey: "userInfoID")
+                        UserDefaults.standard.set(areaReference.recordID.recordName, forKey: "areaInfoID")
                         UserDefaults.standard.set(firstName, forKey: "userFirstName")
                         UserDefaults.standard.set(lastName, forKey: "userLastName")
                         UserDefaults.standard.set(number, forKey: "userPhoneNumber")
@@ -226,6 +237,7 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                         UserDefaults.standard.set(code.isSecurity, forKey: "isSecurity")
                     }
                 }
+                publicDatabase.add(modifyRecord)
                 existNumber = true
             }
             break

@@ -52,3 +52,28 @@ struct Contact {
     let number: String
     let receivesMessages: Bool
 }
+
+struct UserInfo {
+    let firstName: String
+    let lastName: String
+    let address: String
+    let number: String
+    let record: CKRecord
+    var image: UIImage?
+}
+
+extension UserInfo {
+    init(_ record: CKRecord) {
+        self.record = record
+        firstName = record.value(forKey: "firstName") as! String
+        lastName = record.value(forKey: "lastName") as! String
+        address = record.value(forKey: "address") as! String
+        number = record.value(forKey: "number") as! String
+        if let asset = record.value(forKey: "image") as? CKAsset,
+           let data = try? Data(contentsOf: (asset.fileURL!)),
+           let image = UIImage(data: data)
+        {
+            self.image = image
+        }
+    }
+}

@@ -38,6 +38,7 @@
 		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
 		7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */; };
 		7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */; };
+		7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */; };
 		7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */; };
 		7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F13E261EE7DD0040DE45 /* DataModel.swift */; };
 		7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */; };
@@ -78,6 +79,7 @@
 		7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactDetailsViewController.swift; sourceTree = "<group>"; };
+		7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityResidentDetailsViewController.swift; sourceTree = "<group>"; };
 		7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Authentication-Profile.storyboard"; sourceTree = "<group>"; };
 		7EE5F13E261EE7DD0040DE45 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProfileViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */,
+				7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */,
 				7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */,
 				7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */,
 				7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */,
@@ -298,6 +301,7 @@
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
 				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
 				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
+				7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
 				7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */,
 				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,

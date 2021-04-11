@@ -24,8 +24,14 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Emergency Contacts"
+        
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
         textFieldInsideSearchBar?.textColor = UIColor(named: "color_labelSecondary")
+        
+        let control = UIRefreshControl()
+        control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        tableView.refreshControl = control
+        
         fetchData()
         searchBar.delegate = self
     }
@@ -87,11 +93,16 @@ class UserContactsTableViewController: UITableViewController, UISearchBarDelegat
         }
     }
     
-    
     func filterData(_ newContacts: [String: [Contact]]){
         contactDictionary = newContacts
         sections = []
         sections = [String](contactDictionary.keys.filter { contactDictionary[$0]?.isEmpty == false })
+    }
+    
+    @objc func pullToRefresh() {
+        tableView.refreshControl?.beginRefreshing()
+        fetchData()
+        tableView.refreshControl?.endRefreshing()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
