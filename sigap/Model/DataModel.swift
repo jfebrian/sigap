@@ -45,3 +45,10 @@ extension Code {
         isUsed = record.value(forKey: "isUsed") as! Int
     }
 }
+
+struct Contact {
+    let name: String
+    let category: String
+    let number: String
+    let receivesMessages: Bool
+}
