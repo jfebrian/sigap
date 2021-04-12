@@ -134,11 +134,18 @@ class AuthProfileViewController: UIViewController {
             } else {
                 guard let info = inputInfo else {return}
                 self.completeProfile(info)
-                let sb: UIStoryboard = UIStoryboard(name: "User", bundle: nil)
-                let userVC = sb.instantiateViewController(identifier: "userSb")
-                let userProfileVC = UINavigationController(rootViewController: userVC)
-                userProfileVC.modalPresentationStyle = .fullScreen
-                self.present(userProfileVC, animated: true, completion: nil)
+                if UserDefaults.standard.bool(forKey: "isSecurity") {
+                    let sb: UIStoryboard = UIStoryboard(name: "Security", bundle: nil)
+                    let securityVC = sb.instantiateInitialViewController()
+                    securityVC!.modalPresentationStyle = .fullScreen
+                    self.present(securityVC!, animated: true, completion: nil)
+                } else {
+                    let sb: UIStoryboard = UIStoryboard(name: "User", bundle: nil)
+                    let userVC = sb.instantiateViewController(identifier: "userSb")
+                    let userProfileVC = UINavigationController(rootViewController: userVC)
+                    userProfileVC.modalPresentationStyle = .fullScreen
+                    self.present(userProfileVC, animated: true, completion: nil)
+                }
             }
         }
     }

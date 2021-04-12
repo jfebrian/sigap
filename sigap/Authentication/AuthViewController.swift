@@ -212,6 +212,8 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                 let recordID = CKRecord.ID(recordName: userID)
                 let userInfo = CKRecord(recordType: "UserInfo", recordID: recordID)
                 let areaReference = CKRecord.Reference(recordID: area.record!.recordID, action: .deleteSelf)
+                let areaName = areaReference.recordID.recordName
+                print("areaName")
                 
                 userInfo.setValue(areaReference, forKey: "area")
 
@@ -222,6 +224,7 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
                     if error != nil {
                         print("error: \(error!.localizedDescription)")
                     } else {
+                        UserDefaults.standard.set(areaName, forKey: "areaInfoID")
                         UserDefaults.standard.set(userID, forKey: "userInfoID")
                         UserDefaults.standard.set(true, forKey: "isRegistered")
                         UserDefaults.standard.setValue(true, forKey: "isLogin")
@@ -236,26 +239,27 @@ extension AuthViewController:  ASAuthorizationControllerDelegate {
             break
         }
         
-        if code.isSecurity {
-            let sb: UIStoryboard = UIStoryboard(name: "Security", bundle: nil)
-            let securityVC = sb.instantiateInitialViewController()
-            securityVC!.modalPresentationStyle = .fullScreen
-            self.present(securityVC!, animated: true, completion: nil)
-        } else {
-            if existNumber {
+        if existNumber {
+            if code.isSecurity {
+                let sb: UIStoryboard = UIStoryboard(name: "Security", bundle: nil)
+                let securityVC = sb.instantiateInitialViewController()
+                securityVC!.modalPresentationStyle = .fullScreen
+                self.present(securityVC!, animated: true, completion: nil)
+            } else {
                 let storyboard : UIStoryboard = UIStoryboard(name: "User", bundle: nil)
                 let userHomeVC: UserViewController = storyboard.instantiateViewController(withIdentifier: "userSb") as! UserViewController
                 let navigationHomeVC = UINavigationController(rootViewController: userHomeVC)
                 navigationHomeVC.modalPresentationStyle = .fullScreen
                 self.present(navigationHomeVC, animated: true, completion: nil)
-            } else {
-                let storyboard: UIStoryboard = UIStoryboard(name: "Authentication-Profile", bundle: nil)
-                let profileVC = storyboard.instantiateViewController(withIdentifier: "profileSb") as! AuthProfileViewController
-                let navigationProfileVC = UINavigationController(rootViewController: profileVC)
-                navigationProfileVC.modalPresentationStyle = .fullScreen
-                self.present(navigationProfileVC, animated: true, completion: nil)
             }
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Authentication-Profile", bundle: nil)
+            let profileVC = storyboard.instantiateViewController(withIdentifier: "profileSb") as! AuthProfileViewController
+            let navigationProfileVC = UINavigationController(rootViewController: profileVC)
+            navigationProfileVC.modalPresentationStyle = .fullScreen
+            self.present(navigationProfileVC, animated: true, completion: nil)
         }
+        
     }
 }
 
