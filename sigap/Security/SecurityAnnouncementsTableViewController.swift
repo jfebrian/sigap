@@ -90,7 +90,7 @@ class SecurityAnnouncementsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "announcementId") as! SecurityAnnouncementsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "announcementId") as! AnnouncementTableViewCell
         
         cell.titleLabel.text = announcements[indexPath.row].title
         cell.contentLabel.text = announcements[indexPath.row].content

@@ -91,7 +91,7 @@ extension Announcement {
         self.record = record
         title = record.value(forKey: "title") as! String
         let rawDate = record.value(forKey: "modificationDate") as! Date
-        date = rawDate.toString(dateFormat: "EEEE, MMM d, yyyy")
+        date = rawDate.toString(dateFormat: "EEEE, MMM d yyyy")
         shortDate = rawDate.toString(dateFormat: "MMM d")
         content = record.value(forKey: "content") as! String
     }
