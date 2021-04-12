@@ -35,6 +35,10 @@
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
 		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
+		B924DAED261EED1D0077318D /* UserSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924DAEC261EED1D0077318D /* UserSettingTableViewController.swift */; };
+		B9816F8A262454F800D0E9B3 /* UserSettingLangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F89262454F800D0E9B3 /* UserSettingLangViewController.swift */; };
+		B9816F8E262455DF00D0E9B3 /* UserSettingContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F8D262455DF00D0E9B3 /* UserSettingContactViewController.swift */; };
+		B9816F912624563B00D0E9B3 /* UserSettingAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,10 @@
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
 		7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsTableViewController.swift; sourceTree = "<group>"; };
+		B924DAEC261EED1D0077318D /* UserSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingTableViewController.swift; sourceTree = "<group>"; };
+		B9816F89262454F800D0E9B3 /* UserSettingLangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLangViewController.swift; sourceTree = "<group>"; };
+		B9816F8D262455DF00D0E9B3 /* UserSettingContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingContactViewController.swift; sourceTree = "<group>"; };
+		B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingAboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,12 +173,24 @@
 		7E3A0C522618559800977F78 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				B9816F8C262455BE00D0E9B3 /* UserSetting */,
 				7E3A0C542618568F00977F78 /* UserViewController.swift */,
 				7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */,
 				7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */,
 				7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		B9816F8C262455BE00D0E9B3 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B9816F8D262455DF00D0E9B3 /* UserSettingContactViewController.swift */,
+				B924DAEC261EED1D0077318D /* UserSettingTableViewController.swift */,
+				B9816F89262454F800D0E9B3 /* UserSettingLangViewController.swift */,
+				B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */,
+			);
+			path = UserSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,7 @@
 				7E3A0C172617166800977F78 /* AuthCustomButton.swift in Sources */,
 				7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
+				B924DAED261EED1D0077318D /* UserSettingTableViewController.swift in Sources */,
 				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
 				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
@@ -263,11 +284,14 @@
 				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,
 				7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */,
 				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
+				B9816F8A262454F800D0E9B3 /* UserSettingLangViewController.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
 				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
 				7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */,
+				B9816F912624563B00D0E9B3 /* UserSettingAboutViewController.swift in Sources */,
+				B9816F8E262455DF00D0E9B3 /* UserSettingContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
