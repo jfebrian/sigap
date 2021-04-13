@@ -16,6 +16,10 @@ class SecurityCctvTableViewController: UITableViewController {
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
     var firstLoad = true
+    let videoURLS = [
+        URL(string: "https://www.dropbox.com/s/3quui80i9scukbt/steet-small3.mp4?raw=1"),
+        URL(string: "https://www.dropbox.com/s/pzpxg5mlxau4c3s/street-small2.mp4?raw=1"),
+        URL(string: "https://www.dropbox.com/s/dg4yir6cjegv4bf/street-small.mp4?raw=1") ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +39,11 @@ class SecurityCctvTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cctvId") as! SecurityCctvTableViewCell
         
+        cell.thumbnailIndex = indexPath.row % 3
         cell.cctvLabel.text = "Cam \(indexPath.row+1)"
+        cell.setThumbnail()
         
-        let videoURL = URL(string: "https://www.dropbox.com/s/dg4yir6cjegv4bf/street-small.mp4?raw=1")
+        let videoURL = videoURLS[indexPath.row % 3]
         
         cell.videoPlayerItem = AVPlayerItem.init(url: videoURL!)
         cell.avPlayerLayer!.borderWidth = 1

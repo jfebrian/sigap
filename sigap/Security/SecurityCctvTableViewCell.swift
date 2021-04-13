@@ -13,7 +13,9 @@ class SecurityCctvTableViewCell: UITableViewCell {
     @IBOutlet weak var cctvView: UIView!
     @IBOutlet weak var cctvLabel: UILabel!
     
-    let thumbnail = UIImage(named:"cctv_thumbnail")?.cgImage
+    
+    let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 5, y: 5, width: 50, height: 50))
+    var thumbnailIndex: Int?
     let myLayer = CALayer()
     var avPlayer: AVPlayer?
     var avPlayerLayer: AVPlayerLayer?
@@ -27,21 +29,46 @@ class SecurityCctvTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setupMoviePlayer()
+        addVignette()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func setupMoviePlayer(){
-        myLayer.frame = CGRect(
+    func addVignette() {
+        let g = CAGradientLayer()
+        g.type = .radial
+        g.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        let center = CGPoint(x: 0.5, y: 0.5)
+        g.startPoint = center
+        let radius = 2
+        g.endPoint = CGPoint(x: radius, y: radius)
+        g.frame = CGRect(
             x: 0, y: 0,
             width: cctvView.frame.size.width+14,
+            height: cctvView.frame.size.height)
+        cctvView.layer.insertSublayer(g, at: 10)
+    }
+    
+    func setThumbnail() {
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = .large
+        loadingIndicator.startAnimating()
+        let thumbnail = UIImage(
+            named:"cctv_thumbnail\(thumbnailIndex!)")?.cgImage
+        myLayer.frame = CGRect(
+            x: 0, y: 0,
+            width: cctvView.frame.size.width,
             height: cctvView.frame.size.height)
         myLayer.contents = thumbnail
         myLayer.cornerRadius = 10
         myLayer.masksToBounds = true
+    }
+    
+    func setupMoviePlayer(){
         cctvView.layer.addSublayer(myLayer)
+        cctvView.addSubview(loadingIndicator)
         self.avPlayer = AVPlayer.init(playerItem: self.videoPlayerItem)
         if #available(iOS 10.0, *) {
             avPlayer!.addObserver(self, forKeyPath: "timeControlStatus", options: [.old, .new], context: nil)
