@@ -47,7 +47,7 @@ class SecurityCctvTableViewController: UITableViewController {
         
         cell.videoPlayerItem = AVPlayerItem.init(url: videoURL!)
         cell.avPlayerLayer!.borderWidth = 1
-        cell.avPlayerLayer!.borderColor = UIColor.white.cgColor
+        cell.avPlayerLayer!.borderColor = UIColor.label.cgColor
         cell.avPlayerLayer!.cornerRadius = 10.0
         return cell
     }

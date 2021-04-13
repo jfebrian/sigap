@@ -46,8 +46,9 @@ class SecurityCctvTableViewCell: UITableViewCell {
         g.endPoint = CGPoint(x: radius, y: radius)
         g.frame = CGRect(
             x: 0, y: 0,
-            width: cctvView.frame.size.width+14,
+            width: cctvView.frame.size.width+15,
             height: cctvView.frame.size.height)
+        g.cornerRadius = 10
         cctvView.layer.insertSublayer(g, at: 10)
     }
     
@@ -79,7 +80,7 @@ class SecurityCctvTableViewCell: UITableViewCell {
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
         avPlayerLayer?.frame = CGRect(
             x: 0, y: 0,
-            width: cctvView.frame.size.width+14,
+            width: cctvView.frame.size.width+15,
             height: cctvView.frame.size.height)
         avPlayerLayer?.masksToBounds = true
         avPlayerLayer?.videoGravity = .resizeAspectFill
