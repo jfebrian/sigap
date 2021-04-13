@@ -31,7 +31,6 @@
 		7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */; };
 		7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */; };
 		7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */; };
-		7E3A0C502618477600977F78 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */; };
 		7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C542618568F00977F78 /* UserViewController.swift */; };
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
@@ -46,6 +45,8 @@
 		7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */; };
 		7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F13E261EE7DD0040DE45 /* DataModel.swift */; };
 		7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */; };
+		7EFE1CA7262599C20088F7A2 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */; };
+		7EFE1CA8262599C20088F7A2 /* AnnouncementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +77,6 @@
 		7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvCustomImageView.swift; sourceTree = "<group>"; };
 		7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
-		7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		7E3A0C542618568F00977F78 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Authentication-Profile.storyboard"; sourceTree = "<group>"; };
 		7EE5F13E261EE7DD0040DE45 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProfileViewController.swift; sourceTree = "<group>"; };
+		7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
+		7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,9 +198,10 @@
 		7E3A0C3C261758D500977F78 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */,
 				7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */,
 				7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */,
+				7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */,
+				7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFE1CA8262599C20088F7A2 /* AnnouncementCell.xib in Resources */,
 				29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */,
 				7E3A0BFC2616ED9D00977F78 /* Authentication.storyboard in Resources */,
 				7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */,
@@ -317,8 +321,8 @@
 				7EC6EB7C262488C700AA0291 /* UserAnnouncementsTableViewController.swift in Sources */,
 				7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
+				7EFE1CA7262599C20088F7A2 /* AnnouncementCell.swift in Sources */,
 				7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */,
-				7E3A0C502618477600977F78 /* AnnouncementTableViewCell.swift in Sources */,
 				7E508CE0262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift in Sources */,
 				7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */,
 				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,

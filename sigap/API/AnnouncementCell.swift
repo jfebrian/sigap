@@ -1,17 +1,18 @@
 //
-//  SecurityAnnouncementsTableViewCell.swift
+//  AnnouncementCell.swift
 //  sigap
 //
-//  Created by Joanda Febrian on 03/04/21.
+//  Created by Joanda Febrian on 13/04/21.
 //
 
 import UIKit
 
-class AnnouncementTableViewCell: UITableViewCell {
+class AnnouncementCell: UITableViewCell {
 
+    
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,5 @@ class AnnouncementTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
 }

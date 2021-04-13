@@ -17,11 +17,15 @@ class SecurityAnnouncementsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let xib = UINib(nibName: "AnnouncementCell", bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: "announcementCell")
+        
+        fetchData()
+        
         let control = UIRefreshControl()
         control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         tableView.refreshControl = control
         
-        fetchData()
     }
     
     func fetchData(){
@@ -90,7 +94,7 @@ class SecurityAnnouncementsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "announcementId") as! AnnouncementTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "announcementCell") as! AnnouncementCell
         
         cell.titleLabel.text = announcements[indexPath.row].title
         cell.contentLabel.text = announcements[indexPath.row].content

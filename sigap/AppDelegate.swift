@@ -26,18 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         
-        UIApplication.shared.applicationIconBadgeNumber = 0
-        
-        let badgeResetOperation = CKModifyBadgeOperation(badgeValue: 0)
-        badgeResetOperation.modifyBadgeCompletionBlock = { (error) -> Void in
-            if error != nil {
-                print("error: \(error!.localizedDescription)")
-            }
-            else {
-                UIApplication.shared.applicationIconBadgeNumber = 0
-            }
-        }
-        CKContainer.default().add(badgeResetOperation)
         
         return true
     }

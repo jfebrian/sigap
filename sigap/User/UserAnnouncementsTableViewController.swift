@@ -18,6 +18,8 @@ class UserAnnouncementsTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.title = "Announcements"
         
+        let xib = UINib(nibName: "AnnouncementCell", bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: "announcementCell")
         let control = UIRefreshControl()
         control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         tableView.refreshControl = control
@@ -59,7 +61,7 @@ class UserAnnouncementsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userAlertId", for: indexPath) as! AnnouncementTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "announcementCell", for: indexPath) as! AnnouncementCell
         
         cell.titleLabel.text = announcements[indexPath.row].title
         cell.contentLabel.text = announcements[indexPath.row].content
