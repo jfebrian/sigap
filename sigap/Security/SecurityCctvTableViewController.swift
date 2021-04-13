@@ -23,6 +23,10 @@ class SecurityCctvTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         visibleIP = IndexPath.init(row: 0, section: 0)
+        
+        let control = UIRefreshControl()
+        control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        tableView.refreshControl = control
     }
     
 //    func playVideo(cell: UITableViewCell) {
@@ -149,5 +153,10 @@ class SecurityCctvTableViewController: UITableViewController {
         }
 
         paused = true
+    }
+    
+    @objc func pullToRefresh() {
+        tableView.refreshControl?.beginRefreshing()
+        tableView.refreshControl?.endRefreshing()
     }
 }
