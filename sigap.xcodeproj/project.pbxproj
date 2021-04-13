@@ -11,6 +11,7 @@
 		29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29117C472614827C00D5D499 /* SceneDelegate.swift */; };
 		29117C4F2614827D00D5D499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29117C4E2614827D00D5D499 /* Assets.xcassets */; };
 		29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29117C502614827D00D5D499 /* LaunchScreen.storyboard */; };
+		7E33D726261DB1BF00F9B81B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E33D725261DB1BF00F9B81B /* CloudKit.framework */; };
 		7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */; };
 		7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */; };
 		7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */; };
@@ -28,17 +29,28 @@
 		7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */; };
 		7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */; };
 		7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */; };
-		7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */; };
 		7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */; };
-		7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */; };
 		7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C542618568F00977F78 /* UserViewController.swift */; };
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
 		7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */; };
+		7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */; };
+		7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */; };
+		7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */; };
+		7E508CE0262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */; };
+		7EBF9D672624573400DD2A8C /* SecurityNewAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */; };
+		7EC6EB7C262488C700AA0291 /* UserAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */; };
+		7EC6EB7F26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */; };
+		7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */; };
+		7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F13E261EE7DD0040DE45 /* DataModel.swift */; };
+		7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */; };
+		7EFE1CA7262599C20088F7A2 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */; };
+		7EFE1CA8262599C20088F7A2 /* AnnouncementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */; };
 		B924DAED261EED1D0077318D /* UserSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924DAEC261EED1D0077318D /* UserSettingTableViewController.swift */; };
 		B9816F8A262454F800D0E9B3 /* UserSettingLangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F89262454F800D0E9B3 /* UserSettingLangViewController.swift */; };
 		B9816F8E262455DF00D0E9B3 /* UserSettingContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F8D262455DF00D0E9B3 /* UserSettingContactViewController.swift */; };
 		B9816F912624563B00D0E9B3 /* UserSettingAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +60,8 @@
 		29117C4E2614827D00D5D499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29117C512614827D00D5D499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29117C532614827D00D5D499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E33D722261DB1BC00F9B81B /* sigap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sigap.entitlements; sourceTree = "<group>"; };
+		7E33D725261DB1BF00F9B81B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7E3A0BEB2616E78500977F78 /* Security-Residents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Residents.storyboard"; sourceTree = "<group>"; };
 		7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-CCTV.storyboard"; sourceTree = "<group>"; };
 		7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Security-Announcements.storyboard"; sourceTree = "<group>"; };
@@ -65,9 +79,7 @@
 		7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSearchMatcher.swift; sourceTree = "<group>"; };
 		7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewCell.swift; sourceTree = "<group>"; };
 		7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewController.swift; sourceTree = "<group>"; };
-		7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvCustomImageView.swift; sourceTree = "<group>"; };
 		7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
-		7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewCell.swift; sourceTree = "<group>"; };
 		7E3A0C542618568F00977F78 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +88,19 @@
 		B9816F89262454F800D0E9B3 /* UserSettingLangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLangViewController.swift; sourceTree = "<group>"; };
 		B9816F8D262455DF00D0E9B3 /* UserSettingContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingContactViewController.swift; sourceTree = "<group>"; };
 		B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingAboutViewController.swift; sourceTree = "<group>"; };
+		7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactDetailsViewController.swift; sourceTree = "<group>"; };
+		7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityResidentDetailsViewController.swift; sourceTree = "<group>"; };
+		7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementDetailsViewController.swift; sourceTree = "<group>"; };
+		7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityNewAnnouncementViewController.swift; sourceTree = "<group>"; };
+		7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementDetailsViewController.swift; sourceTree = "<group>"; };
+		7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Authentication-Profile.storyboard"; sourceTree = "<group>"; };
+		7EE5F13E261EE7DD0040DE45 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProfileViewController.swift; sourceTree = "<group>"; };
+		7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
+		7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementCell.xib; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E33D726261DB1BF00F9B81B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +120,7 @@
 			children = (
 				29117C442614827C00D5D499 /* sigap */,
 				29117C432614827C00D5D499 /* Products */,
+				7E33D724261DB1BF00F9B81B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +135,8 @@
 		29117C442614827C00D5D499 /* sigap */ = {
 			isa = PBXGroup;
 			children = (
+				7EE5F13D261EE7C60040DE45 /* Model */,
+				7E33D722261DB1BC00F9B81B /* sigap.entitlements */,
 				7E3A0C3C261758D500977F78 /* API */,
 				7E3A0C1C26173F9400977F78 /* Security */,
 				7E3A0C1A26172D1B00977F78 /* Authentication */,
@@ -122,6 +151,14 @@
 			path = sigap;
 			sourceTree = "<group>";
 		};
+		7E33D724261DB1BF00F9B81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E33D725261DB1BF00F9B81B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E3A0BEE2616E84D00977F78 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +167,7 @@
 				7E3A0BF02616E89F00977F78 /* Security-CCTV.storyboard */,
 				7E3A0BF32616E8AC00977F78 /* Security-Announcements.storyboard */,
 				7E3A0BFB2616ED9D00977F78 /* Authentication.storyboard */,
+				7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */,
 				7E3A0BFF2616F12900977F78 /* User.storyboard */,
 				7E3A0C022616F13500977F78 /* User-Contacts.storyboard */,
 				7E3A0C052616F13F00977F78 /* User-Announcements.storyboard */,
@@ -145,6 +183,7 @@
 				7E3A0C162617166800977F78 /* AuthCustomButton.swift */,
 				7E3A0C0F2617112F00977F78 /* AuthViewController.swift */,
 				7E3A0C0C261703F400977F78 /* AuthCustomTextField.swift */,
+				7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -153,11 +192,12 @@
 			isa = PBXGroup;
 			children = (
 				7E3A0C30261741AB00977F78 /* SecurityResidentsTableViewController.swift */,
+				7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */,
 				7E3A0C422618397A00977F78 /* SecurityCctvTableViewCell.swift */,
 				7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */,
-				7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */,
 				7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */,
-				7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */,
+				7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */,
+				7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -166,6 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */,
+				7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */,
+				7EFE1CA5262599C20088F7A2 /* AnnouncementCell.swift */,
+				7EFE1CA6262599C20088F7A2 /* AnnouncementCell.xib */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -178,6 +221,9 @@
 				7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */,
 				7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */,
 				7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */,
+				7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */,
+				7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */,
+				7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -191,6 +237,12 @@
 				B9816F902624563B00D0E9B3 /* UserSettingAboutViewController.swift */,
 			);
 			path = UserSetting;
+		7EE5F13D261EE7C60040DE45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EE5F13E261EE7DD0040DE45 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFE1CA8262599C20088F7A2 /* AnnouncementCell.xib in Resources */,
 				29117C522614827D00D5D499 /* LaunchScreen.storyboard in Resources */,
 				7E3A0BFC2616ED9D00977F78 /* Authentication.storyboard in Resources */,
 				7E3A0BF42616E8AC00977F78 /* Security-Announcements.storyboard in Resources */,
@@ -262,6 +315,7 @@
 				7E3A0C092616F14600977F78 /* User-Settings.storyboard in Resources */,
 				7E3A0BEC2616E78500977F78 /* Security-Residents.storyboard in Resources */,
 				7E3A0BF12616E89F00977F78 /* Security-CCTV.storyboard in Resources */,
+				7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,22 +330,30 @@
 				7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */,
 				29117C462614827C00D5D499 /* AppDelegate.swift in Sources */,
 				B924DAED261EED1D0077318D /* UserSettingTableViewController.swift in Sources */,
+				7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */,
 				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7EBF9D672624573400DD2A8C /* SecurityNewAnnouncementViewController.swift in Sources */,
 				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
 				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
+				7EC6EB7C262488C700AA0291 /* UserAnnouncementsTableViewController.swift in Sources */,
+				7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
-				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,
+				7EFE1CA7262599C20088F7A2 /* AnnouncementCell.swift in Sources */,
+				7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */,
+				7E508CE0262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift in Sources */,
 				7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */,
-				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
 				B9816F8A262454F800D0E9B3 /* UserSettingLangViewController.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
 				7E3A0C132617117B00977F78 /* AuthNavigationController.swift in Sources */,
+				7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */,
 				7E3A0C0D261703F400977F78 /* AuthCustomTextField.swift in Sources */,
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
 				7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */,
 				B9816F912624563B00D0E9B3 /* UserSettingAboutViewController.swift in Sources */,
 				B9816F8E262455DF00D0E9B3 /* UserSettingContactViewController.swift in Sources */,
+				7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */,
+				7EC6EB7F26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sigap/sigap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7BXMQ2C5C2;
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,8 +512,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sigap/sigap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7BXMQ2C5C2;
 				INFOPLIST_FILE = sigap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

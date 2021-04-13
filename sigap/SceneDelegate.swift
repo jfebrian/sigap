@@ -16,7 +16,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+
+        self.loadBaseController()
+    }
+    
+    func loadBaseController() {
+       guard let window = self.window else { return }
+       window.makeKeyAndVisible()
+        let isLogin:Bool = UserDefaults.standard.bool(forKey: "isLogin")
+        let isSecurity:Bool = UserDefaults.standard.bool(forKey: "isSecurity")
+        if !isLogin {
+            let storyboard : UIStoryboard = UIStoryboard(name: "Authentication", bundle: nil)
+            let loginVC: AuthViewController = storyboard.instantiateViewController(withIdentifier: "areaCodeSb") as! AuthViewController
+            let navigationLoginVC = UINavigationController(rootViewController: loginVC)
+            self.window?.rootViewController = navigationLoginVC
+        } else {
+            if !isSecurity {
+                if UserDefaults.standard.bool(forKey: "isRegistered") {
+                    let storyboard : UIStoryboard = UIStoryboard(name: "User", bundle: nil)
+                    let userHomeVC: UserViewController = storyboard.instantiateViewController(withIdentifier: "userSb") as! UserViewController
+                    let navigationHomeVC = UINavigationController(rootViewController: userHomeVC)
+                    self.window?.rootViewController = navigationHomeVC
+                } else {
+                    let storyboard: UIStoryboard = UIStoryboard(name: "Authentication-Profile", bundle: nil)
+                    let profileVC = storyboard.instantiateViewController(withIdentifier: "profileSb") as! AuthProfileViewController
+                    let navigationProfileVC = UINavigationController(rootViewController: profileVC)
+                    self.window?.rootViewController = navigationProfileVC
+                }
+            } else {
+                let storyboard : UIStoryboard = UIStoryboard(name: "Security", bundle: nil)
+                self.window?.rootViewController = storyboard.instantiateInitialViewController()
+                
+            }
+        }
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

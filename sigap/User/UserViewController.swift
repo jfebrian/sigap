@@ -30,6 +30,7 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.overrideUserInterfaceStyle = .dark
         setupCard()
     }
     
