@@ -4,8 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +25,7 @@
                         <sections>
                             <tableViewSection headerTitle="Language" id="M84-dV-MzM">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Language" textLabel="IWb-Ut-1Sg" imageView="HOf-DY-bNm" style="IBUITableViewCellStyleDefault" id="kv2-ZX-WuM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Language" textLabel="IWb-Ut-1Sg" imageView="HOf-DY-bNm" style="IBUITableViewCellStyleDefault" id="kv2-ZX-WuM">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kv2-ZX-WuM" id="N7w-eA-HXv">
@@ -77,15 +75,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color_bg-settings"/>
-                                        <connections>
-                                            <segue destination="ICO-tb-F6X" kind="show" id="GtH-ew-uzC"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Help" id="jrb-tU-TbW">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="GtN-BL-SfB" detailTextLabel="bcF-Jp-Ooq" imageView="Ghx-92-Vjd" style="IBUITableViewCellStyleValue1" id="rgg-s3-NnA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="GtN-BL-SfB" detailTextLabel="bcF-Jp-Ooq" imageView="Ghx-92-Vjd" style="IBUITableViewCellStyleValue1" id="rgg-s3-NnA">
                                         <rect key="frame" x="0.0" y="227" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rgg-s3-NnA" id="pMX-m6-7wh">
@@ -114,7 +109,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color_bg-settings"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TAP-Jf-UQh" imageView="Jhy-EX-OOa" style="IBUITableViewCellStyleDefault" id="mpC-XF-zPn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TAP-Jf-UQh" imageView="Jhy-EX-OOa" style="IBUITableViewCellStyleDefault" id="mpC-XF-zPn">
                                         <rect key="frame" x="0.0" y="270.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mpC-XF-zPn" id="ukt-Z7-dIe">
@@ -136,7 +131,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color_bg-settings"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Mhr-JY-1vU" imageView="1yh-a3-rOr" style="IBUITableViewCellStyleDefault" id="LPB-mH-IZo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Mhr-JY-1vU" imageView="1yh-a3-rOr" style="IBUITableViewCellStyleDefault" id="LPB-mH-IZo">
                                         <rect key="frame" x="0.0" y="314" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LPB-mH-IZo" id="O5x-Xd-JJA">
@@ -157,15 +152,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color_bg-settings"/>
-                                        <connections>
-                                            <segue destination="YHX-mZ-EOk" kind="show" id="2Bw-Af-rZM"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="pJq-zl-K9I">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ADM-Hi-NsZ" imageView="25E-Iw-Gjf" style="IBUITableViewCellStyleDefault" id="31g-gb-7DY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ADM-Hi-NsZ" imageView="25E-Iw-Gjf" style="IBUITableViewCellStyleDefault" id="31g-gb-7DY">
                                         <rect key="frame" x="0.0" y="413.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="31g-gb-7DY" id="5z9-5g-Mph">
@@ -204,22 +196,6 @@
             </objects>
             <point key="canvasLocation" x="1873.913043478261" y="99.776785714285708"/>
         </scene>
-        <!--About-->
-        <scene sceneID="Jqc-XH-77v">
-            <objects>
-                <viewController title="About" id="YHX-mZ-EOk" customClass="UserSettingAboutViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fMu-Ua-8qe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GAh-dt-V85"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ine-fA-2Vz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ghu-rq-vG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2957" y="591"/>
-        </scene>
         <!--User Setting Lang View Controller-->
         <scene sceneID="qBB-4b-CM1">
             <objects>
@@ -231,7 +207,7 @@
                         <sections>
                             <tableViewSection id="uVz-WO-hRK">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bahasaCell" textLabel="aMz-mO-RQU" style="IBUITableViewCellStyleDefault" id="8cf-6y-3w9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="bahasaCell" textLabel="aMz-mO-RQU" style="IBUITableViewCellStyleDefault" id="8cf-6y-3w9">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8cf-6y-3w9" id="swX-nQ-9CZ">
@@ -249,7 +225,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="englishCell" textLabel="IPd-C3-yul" style="IBUITableViewCellStyleDefault" id="qZG-yv-CQN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="englishCell" textLabel="IPd-C3-yul" style="IBUITableViewCellStyleDefault" id="qZG-yv-CQN">
                                         <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZG-yv-CQN" id="Qpc-ch-eSH">
@@ -282,45 +258,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AT-9r-EZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="-285"/>
-        </scene>
-        <!--Contact-->
-        <scene sceneID="J6h-Ck-eIN">
-            <objects>
-                <viewController title="Contact" id="ICO-tb-F6X" customClass="UserSettingContactViewController" customModule="sigap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0q9-HD-BIg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-n5-ymG">
-                                <rect key="frame" x="16" y="35" width="382" height="34"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLn-CC-w27">
-                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuy-mw-C5J">
-                                        <rect key="frame" x="38.5" y="0.0" width="343.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="rL7-Bt-OLd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bcq-n5-ymG" firstAttribute="leading" secondItem="rL7-Bt-OLd" secondAttribute="leading" constant="16" id="ENM-By-scg"/>
-                            <constraint firstItem="rL7-Bt-OLd" firstAttribute="trailing" secondItem="bcq-n5-ymG" secondAttribute="trailing" constant="16" id="hJD-MT-3Vb"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="yXW-c4-Di6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5re-jJ-slI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3749" y="100"/>
+            <point key="canvasLocation" x="2652" y="100"/>
         </scene>
     </scenes>
     <resources>
@@ -336,8 +274,5 @@
         <namedColor name="color_label">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
