@@ -12,8 +12,6 @@ import CloudKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UNUserNotificationCenter.current().delegate = self
@@ -28,8 +26,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
+        let badgeResetOperation = CKModifyBadgeOperation(badgeValue: 0)
+        badgeResetOperation.modifyBadgeCompletionBlock = { (error) -> Void in
+            if error != nil {
+                print("error: \(error!.localizedDescription)")
+            }
+            else {
+                UIApplication.shared.applicationIconBadgeNumber = 0
+            }
+        }
+        CKContainer.default().add(badgeResetOperation)
+        
         return true
     }
+
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let areaInfoID = UserDefaults.standard.value(forKey: "areaInfoID") as? String
