@@ -14,6 +14,10 @@ class SecurityCctvTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
+        let control = UIRefreshControl()
+        control.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        tableView.refreshControl = control
 
     }
     
@@ -26,5 +30,10 @@ class SecurityCctvTableViewController: UITableViewController {
         cell.cctvImage.image = UIImage(named: imageArray[indexPath.row])
         cell.cctvLabel.text = "Cam \(indexPath.row+1)"
         return cell
+    }
+    
+    @objc func pullToRefresh() {
+        tableView.refreshControl?.beginRefreshing()
+        tableView.refreshControl?.endRefreshing()
     }
 }

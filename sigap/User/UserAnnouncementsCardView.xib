@@ -11,17 +11,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserAnnouncementsCardViewController" customModule="sigap" customModuleProvider="target">
             <connections>
                 <outlet property="firstContentLabel" destination="XRn-SU-NPo" id="Sht-oJ-V7V"/>
+                <outlet property="firstSeparator" destination="J8Y-4K-8Em" id="fgT-ql-ERZ"/>
+                <outlet property="firstSeparator2" destination="VrG-xD-9SL" id="3IO-BM-ZRq"/>
                 <outlet property="firstTitleLabel" destination="8hC-Lb-RSZ" id="aRh-tA-RsU"/>
+                <outlet property="firstView" destination="0f8-4r-Jn0" id="VcQ-Nf-kDG"/>
                 <outlet property="fourthContentLabel" destination="1Fq-jX-ZlM" id="dVj-Bl-zPZ"/>
+                <outlet property="fourthSeparator" destination="PkZ-uW-3Zr" id="pe8-0t-9Nu"/>
                 <outlet property="fourthTitleLabel" destination="DMN-eQ-7Fz" id="Y9x-b0-SYm"/>
+                <outlet property="fourthView" destination="yUK-Tt-dvQ" id="Egn-gD-p0i"/>
                 <outlet property="handleArea" destination="2B1-W5-qSG" id="feW-xu-oaM"/>
                 <outlet property="handleBar" destination="jvs-kC-IZR" id="AXZ-93-Ivs"/>
                 <outlet property="secondContentLabel" destination="r60-Im-Nv7" id="EEn-ac-HgN"/>
+                <outlet property="secondSeparator" destination="JUv-Xj-WLE" id="uJR-a1-XnY"/>
                 <outlet property="secondTitleLabel" destination="sPX-Sn-1ax" id="Qgi-6L-wK1"/>
+                <outlet property="secondView" destination="Gdp-pC-HA9" id="hno-a0-Ugn"/>
                 <outlet property="thirdContentLabel" destination="iIh-hq-cxD" id="Ytu-4D-uEj"/>
+                <outlet property="thirdSeparator" destination="Vus-8w-I5t" id="kN7-Od-VQU"/>
                 <outlet property="thirdTitleLabel" destination="7SX-0S-Z94" id="PyD-iS-VER"/>
+                <outlet property="thirdView" destination="wHP-iN-owz" id="2cW-Xd-7Xm"/>
                 <outlet property="updatedLabel" destination="pLX-jY-2qm" id="4gZ-0z-BtF"/>
                 <outlet property="view" destination="Vf6-pF-66D" id="jpz-TS-lxK"/>
+                <outlet property="viewAllButton" destination="Ahj-0l-zGz" id="Cg0-Fp-HNW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -46,7 +56,7 @@
                             <color key="textColor" name="color_label"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated:  Friday, 26 March 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLX-jY-2qm" userLabel="Last updated:">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLX-jY-2qm" userLabel="Last updated:">
                             <rect key="frame" x="32" y="78.666666666666671" width="350" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" name="color_labelSecondary"/>
@@ -68,8 +78,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG1-Ei-VCi">
                     <rect key="frame" x="0.0" y="144" width="414" height="656"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Wiq-dR-VXR">
-                            <rect key="frame" x="32" y="8" width="350" height="613"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wiq-dR-VXR">
+                            <rect key="frame" x="32" y="8" width="350" height="549"/>
                             <subviews>
                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-4K-8Em" userLabel="Separator">
                                     <rect key="frame" x="0.0" y="0.0" width="350" height="1"/>
@@ -79,33 +89,42 @@
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uPT-dh-vu7" userLabel="First Stack View">
-                                    <rect key="frame" x="0.0" y="13" width="350" height="128"/>
+                                    <rect key="frame" x="0.0" y="5" width="350" height="128"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-4r-Jn0">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penutupan Gerbang Utara Pasca Lockdown Pandemi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-Lb-RSZ">
-                                                    <rect key="frame" x="8" y="7.9999999999999964" width="326" height="53.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-Lb-RSZ">
+                                                    <rect key="frame" x="8" y="8" width="326" height="87"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" name="color_label"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-SU-NPo">
-                                                    <rect key="frame" x="8" y="69.666666666666657" width="326" height="50.333333333333343"/>
-                                                    <string key="text">Kami pihak security dari perumahan Taman Setia Budi Indah sepakat untuk menutup gerbang utara untuk meningkatkan prosedur keamanan dari komplek ini. Dimohon untuk seluruh warga agar dapat menggunakan pintu gerbang selatan selama lockdown pandemi ini.</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-SU-NPo">
+                                                    <rect key="frame" x="8" y="103" width="326" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" name="color_labelSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcl-Xm-Udi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
+                                                    <connections>
+                                                        <action selector="didTapFirstButton:" destination="-1" eventType="touchUpInside" id="5rm-1q-jKC"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XRn-SU-NPo" firstAttribute="top" secondItem="8hC-Lb-RSZ" secondAttribute="bottom" constant="8" id="5EW-v8-beG"/>
-                                                <constraint firstAttribute="trailing" secondItem="XRn-SU-NPo" secondAttribute="trailing" constant="8" id="6PI-bw-25p"/>
-                                                <constraint firstItem="XRn-SU-NPo" firstAttribute="leading" secondItem="0f8-4r-Jn0" secondAttribute="leading" constant="8" id="Mhz-m5-pXs"/>
-                                                <constraint firstItem="8hC-Lb-RSZ" firstAttribute="top" secondItem="0f8-4r-Jn0" secondAttribute="top" constant="8" id="Qpd-ZM-cys"/>
-                                                <constraint firstAttribute="bottom" secondItem="XRn-SU-NPo" secondAttribute="bottom" constant="8" id="Rkh-If-vhK"/>
-                                                <constraint firstItem="8hC-Lb-RSZ" firstAttribute="leading" secondItem="0f8-4r-Jn0" secondAttribute="leading" constant="8" id="bob-Bx-k87"/>
-                                                <constraint firstAttribute="trailing" secondItem="8hC-Lb-RSZ" secondAttribute="trailing" constant="8" id="daq-0q-hDG"/>
+                                                <constraint firstItem="kcl-Xm-Udi" firstAttribute="top" secondItem="0f8-4r-Jn0" secondAttribute="top" id="1fW-XH-6gP"/>
+                                                <constraint firstItem="kcl-Xm-Udi" firstAttribute="leading" secondItem="0f8-4r-Jn0" secondAttribute="leading" id="3nr-Sp-ZuU"/>
+                                                <constraint firstItem="8hC-Lb-RSZ" firstAttribute="top" secondItem="0f8-4r-Jn0" secondAttribute="top" constant="8" id="5T0-8T-1fh"/>
+                                                <constraint firstItem="XRn-SU-NPo" firstAttribute="top" secondItem="8hC-Lb-RSZ" secondAttribute="bottom" constant="8" id="JzT-jZ-8cg"/>
+                                                <constraint firstAttribute="bottom" secondItem="kcl-Xm-Udi" secondAttribute="bottom" id="SUn-kj-zkZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="8hC-Lb-RSZ" secondAttribute="trailing" constant="8" id="Voe-xO-8WP"/>
+                                                <constraint firstAttribute="bottom" secondItem="XRn-SU-NPo" secondAttribute="bottom" constant="8" id="XjR-BZ-xa8"/>
+                                                <constraint firstItem="8hC-Lb-RSZ" firstAttribute="leading" secondItem="0f8-4r-Jn0" secondAttribute="leading" constant="8" id="hUL-Z4-pWh"/>
+                                                <constraint firstItem="XRn-SU-NPo" firstAttribute="leading" secondItem="0f8-4r-Jn0" secondAttribute="leading" constant="8" id="n22-cF-kdm"/>
+                                                <constraint firstAttribute="trailing" secondItem="kcl-Xm-Udi" secondAttribute="trailing" id="tCa-3f-cVJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="XRn-SU-NPo" secondAttribute="trailing" constant="8" id="tiG-kb-gVb"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -115,39 +134,48 @@
                                     </constraints>
                                 </stackView>
                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrG-xD-9SL" userLabel="Separator">
-                                    <rect key="frame" x="0.0" y="153" width="350" height="1"/>
+                                    <rect key="frame" x="0.0" y="137" width="350" height="1"/>
                                     <color key="backgroundColor" name="color_labelSecondary"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="xny-pY-Hm1"/>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0Sg-1O-vKm" userLabel="Second Stack View">
-                                    <rect key="frame" x="0.0" y="166" width="350" height="128"/>
+                                    <rect key="frame" x="0.0" y="142" width="350" height="128"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdp-pC-HA9">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penutupan Gerbang Utara Pasca Lockdown Pandemi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPX-Sn-1ax">
-                                                    <rect key="frame" x="8" y="7.9999999999999964" width="326" height="53.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPX-Sn-1ax">
+                                                    <rect key="frame" x="8" y="8" width="326" height="104"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" name="color_label"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r60-Im-Nv7">
-                                                    <rect key="frame" x="8" y="69.666666666666686" width="326" height="50.333333333333343"/>
-                                                    <string key="text">Kami pihak security dari perumahan Taman Setia Budi Indah sepakat untuk menutup gerbang utara untuk meningkatkan prosedur keamanan dari komplek ini. Dimohon untuk seluruh warga agar dapat menggunakan pintu gerbang selatan selama lockdown pandemi ini.</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r60-Im-Nv7">
+                                                    <rect key="frame" x="8" y="120" width="326" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" name="color_labelSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqC-MG-55v">
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
+                                                    <connections>
+                                                        <action selector="didTapSecondButton:" destination="-1" eventType="touchUpInside" id="y3J-6Q-MZb"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="r60-Im-Nv7" firstAttribute="top" secondItem="sPX-Sn-1ax" secondAttribute="bottom" constant="8" id="1He-d8-t5O"/>
+                                                <constraint firstItem="wqC-MG-55v" firstAttribute="top" secondItem="Gdp-pC-HA9" secondAttribute="top" id="6kh-uj-2eb"/>
                                                 <constraint firstItem="r60-Im-Nv7" firstAttribute="leading" secondItem="Gdp-pC-HA9" secondAttribute="leading" constant="8" id="Wj6-BF-Bf3"/>
                                                 <constraint firstItem="sPX-Sn-1ax" firstAttribute="leading" secondItem="Gdp-pC-HA9" secondAttribute="leading" constant="8" id="X1B-Jl-FjI"/>
+                                                <constraint firstAttribute="bottom" secondItem="wqC-MG-55v" secondAttribute="bottom" id="dVX-3s-ekx"/>
                                                 <constraint firstAttribute="trailing" secondItem="sPX-Sn-1ax" secondAttribute="trailing" constant="8" id="dtY-HE-srN"/>
                                                 <constraint firstAttribute="trailing" secondItem="r60-Im-Nv7" secondAttribute="trailing" constant="8" id="fkw-5A-frt"/>
+                                                <constraint firstAttribute="trailing" secondItem="wqC-MG-55v" secondAttribute="trailing" id="r1D-2A-CbI"/>
                                                 <constraint firstAttribute="bottom" secondItem="r60-Im-Nv7" secondAttribute="bottom" constant="8" id="umB-GI-HLl"/>
+                                                <constraint firstItem="wqC-MG-55v" firstAttribute="leading" secondItem="Gdp-pC-HA9" secondAttribute="leading" id="xad-TE-eb3"/>
                                                 <constraint firstItem="sPX-Sn-1ax" firstAttribute="top" secondItem="Gdp-pC-HA9" secondAttribute="top" constant="8" id="zUd-QJ-auN"/>
                                             </constraints>
                                         </view>
@@ -158,37 +186,46 @@
                                     </constraints>
                                 </stackView>
                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-Xj-WLE" userLabel="Separator">
-                                    <rect key="frame" x="0.0" y="306" width="350" height="1"/>
+                                    <rect key="frame" x="0.0" y="274" width="350" height="1"/>
                                     <color key="backgroundColor" name="color_labelSecondary"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="A1f-DQ-iyX"/>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-gL-4mr" userLabel="Third Stack View">
-                                    <rect key="frame" x="0.0" y="319" width="350" height="128"/>
+                                    <rect key="frame" x="0.0" y="279" width="350" height="128"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHP-iN-owz">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penutupan Gerbang Utara Pasca Lockdown Pandemi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-0S-Z94">
-                                                    <rect key="frame" x="8" y="7.9999999999999964" width="334" height="53.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-0S-Z94">
+                                                    <rect key="frame" x="8" y="8" width="334" height="104"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" name="color_label"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIh-hq-cxD">
-                                                    <rect key="frame" x="8" y="69.666666666666629" width="334" height="50.333333333333343"/>
-                                                    <string key="text">Kami pihak security dari perumahan Taman Setia Budi Indah sepakat untuk menutup gerbang utara untuk meningkatkan prosedur keamanan dari komplek ini. Dimohon untuk seluruh warga agar dapat menggunakan pintu gerbang selatan selama lockdown pandemi ini.</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIh-hq-cxD">
+                                                    <rect key="frame" x="8" y="120" width="334" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" name="color_labelSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD3-td-0Dc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
+                                                    <connections>
+                                                        <action selector="didTapThirdButton:" destination="-1" eventType="touchUpInside" id="ukn-Mc-XJh"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="HD3-td-0Dc" firstAttribute="top" secondItem="wHP-iN-owz" secondAttribute="top" id="Ak0-br-KWr"/>
                                                 <constraint firstItem="iIh-hq-cxD" firstAttribute="top" secondItem="7SX-0S-Z94" secondAttribute="bottom" constant="8" id="LHr-yZ-0aY"/>
+                                                <constraint firstAttribute="bottom" secondItem="HD3-td-0Dc" secondAttribute="bottom" id="T0F-dG-glk"/>
                                                 <constraint firstItem="7SX-0S-Z94" firstAttribute="top" secondItem="wHP-iN-owz" secondAttribute="top" constant="8" id="UKw-jT-Ubl"/>
+                                                <constraint firstAttribute="trailing" secondItem="HD3-td-0Dc" secondAttribute="trailing" id="WWe-5W-9hW"/>
                                                 <constraint firstAttribute="bottom" secondItem="iIh-hq-cxD" secondAttribute="bottom" constant="8" id="YE7-nQ-P8X"/>
                                                 <constraint firstItem="iIh-hq-cxD" firstAttribute="leading" secondItem="wHP-iN-owz" secondAttribute="leading" constant="8" id="Z3a-hL-CwL"/>
+                                                <constraint firstItem="HD3-td-0Dc" firstAttribute="leading" secondItem="wHP-iN-owz" secondAttribute="leading" id="iLY-Eo-7sN"/>
                                                 <constraint firstAttribute="trailing" secondItem="7SX-0S-Z94" secondAttribute="trailing" constant="8" id="q1s-5Q-zzr"/>
                                                 <constraint firstItem="7SX-0S-Z94" firstAttribute="leading" secondItem="wHP-iN-owz" secondAttribute="leading" constant="8" id="u8a-mL-k6C"/>
                                                 <constraint firstAttribute="trailing" secondItem="iIh-hq-cxD" secondAttribute="trailing" constant="8" id="vzq-uK-9jp"/>
@@ -197,46 +234,55 @@
                                     </subviews>
                                 </stackView>
                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vus-8w-I5t" userLabel="Separator">
-                                    <rect key="frame" x="0.0" y="459" width="350" height="1"/>
+                                    <rect key="frame" x="0.0" y="411" width="350" height="1"/>
                                     <color key="backgroundColor" name="color_labelSecondary"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="hId-uv-nxD"/>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-cs-G7P" userLabel="Fourth Stack View">
-                                    <rect key="frame" x="0.0" y="472" width="350" height="128"/>
+                                    <rect key="frame" x="0.0" y="416" width="350" height="128"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-Tt-dvQ">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penutupan Gerbang Utara Pasca Lockdown Pandemi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-eQ-7Fz">
-                                                    <rect key="frame" x="8" y="7.9999999999999964" width="334" height="53.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-eQ-7Fz">
+                                                    <rect key="frame" x="8" y="8" width="334" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" name="color_label"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fq-jX-ZlM">
-                                                    <rect key="frame" x="8" y="69.666666666666629" width="334" height="50.333333333333343"/>
-                                                    <string key="text">Kami pihak security dari perumahan Taman Setia Budi Indah sepakat untuk menutup gerbang utara untuk meningkatkan prosedur keamanan dari komplek ini. Dimohon untuk seluruh warga agar dapat menggunakan pintu gerbang selatan selama lockdown pandemi ini.</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fq-jX-ZlM">
+                                                    <rect key="frame" x="8" y="16" width="334" height="104"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" name="color_labelSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syH-ur-jiE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="128"/>
+                                                    <connections>
+                                                        <action selector="didTapFourthButton:" destination="-1" eventType="touchUpInside" id="JPA-MW-XBv"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DMN-eQ-7Fz" firstAttribute="top" secondItem="yUK-Tt-dvQ" secondAttribute="top" constant="8" id="4fr-ij-3ih"/>
                                                 <constraint firstAttribute="trailing" secondItem="1Fq-jX-ZlM" secondAttribute="trailing" constant="8" id="9z6-xh-Wel"/>
                                                 <constraint firstItem="DMN-eQ-7Fz" firstAttribute="leading" secondItem="yUK-Tt-dvQ" secondAttribute="leading" constant="8" id="BDr-9f-ggj"/>
+                                                <constraint firstAttribute="bottom" secondItem="syH-ur-jiE" secondAttribute="bottom" id="Kfr-N2-uVO"/>
                                                 <constraint firstItem="1Fq-jX-ZlM" firstAttribute="leading" secondItem="yUK-Tt-dvQ" secondAttribute="leading" constant="8" id="KoJ-Fg-k7e"/>
                                                 <constraint firstAttribute="bottom" secondItem="1Fq-jX-ZlM" secondAttribute="bottom" constant="8" id="Rx5-CB-JhB"/>
+                                                <constraint firstAttribute="trailing" secondItem="syH-ur-jiE" secondAttribute="trailing" id="YUR-Yx-CJx"/>
+                                                <constraint firstItem="syH-ur-jiE" firstAttribute="top" secondItem="yUK-Tt-dvQ" secondAttribute="top" id="hn7-qc-s8J"/>
                                                 <constraint firstAttribute="trailing" secondItem="DMN-eQ-7Fz" secondAttribute="trailing" constant="8" id="l3q-zk-IfE"/>
+                                                <constraint firstItem="syH-ur-jiE" firstAttribute="leading" secondItem="yUK-Tt-dvQ" secondAttribute="leading" id="mHQ-pm-U5B"/>
                                                 <constraint firstItem="1Fq-jX-ZlM" firstAttribute="top" secondItem="DMN-eQ-7Fz" secondAttribute="bottom" constant="8" id="q2H-0I-ySe"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-uW-3Zr" userLabel="Separator">
-                                    <rect key="frame" x="0.0" y="612" width="350" height="1"/>
+                                    <rect key="frame" x="0.0" y="548" width="350" height="1"/>
                                     <color key="backgroundColor" name="color_labelSecondary"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="P0M-rc-EAR"/>
@@ -244,11 +290,25 @@
                                 </view>
                             </subviews>
                         </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahj-0l-zGz">
+                            <rect key="frame" x="16" y="573" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="le4-fZ-FN9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="View All Announcements"/>
+                            <connections>
+                                <action selector="didTapViewAll:" destination="-1" eventType="touchUpInside" id="NAf-wo-mzM"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Wiq-dR-VXR" firstAttribute="top" secondItem="UG1-Ei-VCi" secondAttribute="top" constant="8" id="9J3-Yr-0mu"/>
                         <constraint firstAttribute="trailing" secondItem="Wiq-dR-VXR" secondAttribute="trailing" constant="32" id="J4X-N1-DjH"/>
+                        <constraint firstItem="Ahj-0l-zGz" firstAttribute="leading" secondItem="UG1-Ei-VCi" secondAttribute="leading" constant="16" id="Sl2-fS-Wry"/>
                         <constraint firstItem="Wiq-dR-VXR" firstAttribute="leading" secondItem="UG1-Ei-VCi" secondAttribute="leading" constant="32" id="dBE-gX-1yY"/>
+                        <constraint firstItem="Ahj-0l-zGz" firstAttribute="top" secondItem="Wiq-dR-VXR" secondAttribute="bottom" constant="16" id="eR3-qt-UhP"/>
+                        <constraint firstAttribute="trailing" secondItem="Ahj-0l-zGz" secondAttribute="trailing" constant="16" id="ghe-X2-tDb"/>
                     </constraints>
                 </view>
             </subviews>
@@ -269,13 +329,13 @@
     </objects>
     <resources>
         <namedColor name="color_backgroundSecondary">
-            <color red="0.090196078431372548" green="0.12156862745098039" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.090000003576278687" green="0.12200000137090683" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_label">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_labelSecondary">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

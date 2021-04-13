@@ -77,3 +77,33 @@ extension UserInfo {
         }
     }
 }
+
+struct Announcement {
+    let title: String
+    let date: String
+    let shortDate: String?
+    let content: String
+    let record: CKRecord?
+}
+
+extension Announcement {
+    init (_ record: CKRecord) {
+        self.record = record
+        title = record.value(forKey: "title") as! String
+        let rawDate = record.value(forKey: "modificationDate") as! Date
+        date = rawDate.toString(dateFormat: "EEEE, MMM d yyyy")
+        shortDate = rawDate.toString(dateFormat: "MMM d")
+        content = record.value(forKey: "content") as! String
+    }
+}
+
+extension Date
+{
+    func toString( dateFormat format  : String ) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+
+}

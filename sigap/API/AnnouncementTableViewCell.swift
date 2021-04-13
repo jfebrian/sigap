@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecurityAnnouncementsTableViewCell: UITableViewCell {
+class AnnouncementTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!

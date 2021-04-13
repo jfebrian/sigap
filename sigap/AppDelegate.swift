@@ -7,21 +7,69 @@
 
 import UIKit
 import UserNotifications
+import CloudKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        UNUserNotificationCenter.current().delegate = self
+
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { authorized, error in
+            if error != nil {
+                print("error: \(error!.localizedDescription)")
+            } else if authorized {
+              DispatchQueue.main.async(execute: {
+                application.registerForRemoteNotifications()
+              })
+            }
+        })
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
+        let badgeResetOperation = CKModifyBadgeOperation(badgeValue: 0)
+        badgeResetOperation.modifyBadgeCompletionBlock = { (error) -> Void in
             if error != nil {
                 print("error: \(error!.localizedDescription)")
             }
+            else {
+                UIApplication.shared.applicationIconBadgeNumber = 0
+            }
         }
-        UNUserNotificationCenter.current().delegate = self
+        CKContainer.default().add(badgeResetOperation)
+        
         return true
+    }
+
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let areaInfoID = UserDefaults.standard.value(forKey: "areaInfoID") as? String
+        guard let area = areaInfoID else { return }
+        let record = CKRecord(recordType: "Areas", recordID: CKRecord.ID(recordName: area))
+        let reference = CKRecord.Reference(recordID: record.recordID, action: .deleteSelf)
+        let predicate = NSPredicate(format: "area == %@", reference)
+        let subscription = CKQuerySubscription(recordType: "Announcements", predicate: predicate, options: .firesOnRecordCreation)
+        
+        let info = CKSubscription.NotificationInfo()
+        
+        info.titleLocalizationKey = "%1$@"
+        info.titleLocalizationArgs = ["title"]
+        
+        info.alertLocalizationKey = "%1$@"
+        info.alertLocalizationArgs = ["content"]
+        
+        info.shouldBadge = true
+        info.soundName = "default"
+        
+        subscription.notificationInfo = info
+        
+        CKContainer.default().publicCloudDatabase.save(subscription, completionHandler: { subscription, error in
+            if error != nil {
+                print("error: \(error!.localizedDescription)")
+            }
+        })
+        
     }
 
     // MARK: UISceneSession Lifecycle
@@ -43,6 +91,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        return completionHandler([.banner, .badge, .sound])
+      }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter,
         didReceive response: UNNotificationResponse, withCompletionHandler
         completionHandler: @escaping () -> Void) {
@@ -50,12 +103,5 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         print(response.notification.request.content.userInfo)
 
         return completionHandler()
-    }
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent
-        notification: UNNotification, withCompletionHandler completionHandler:
-        @escaping (UNNotificationPresentationOptions) -> Void) {
-        
-        return completionHandler(.banner)
     }
 }

@@ -31,7 +31,7 @@
 		7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */; };
 		7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */; };
 		7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */; };
-		7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */; };
+		7E3A0C502618477600977F78 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */; };
 		7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C542618568F00977F78 /* UserViewController.swift */; };
 		7E3A0C6A2618648B00977F78 /* UserAnnouncementsCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */; };
 		7E3A0C6D261864E000977F78 /* UserAnnouncementsCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */; };
@@ -39,6 +39,10 @@
 		7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */; };
 		7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */; };
 		7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */; };
+		7E508CE0262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */; };
+		7EBF9D672624573400DD2A8C /* SecurityNewAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */; };
+		7EC6EB7C262488C700AA0291 /* UserAnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */; };
+		7EC6EB7F26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */; };
 		7EE10A0D262037F900BB421C /* Authentication-Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */; };
 		7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F13E261EE7DD0040DE45 /* DataModel.swift */; };
 		7EE5F164261F41550040DE45 /* AuthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */; };
@@ -72,7 +76,7 @@
 		7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvTableViewController.swift; sourceTree = "<group>"; };
 		7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCctvCustomImageView.swift; sourceTree = "<group>"; };
 		7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
-		7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementsTableViewCell.swift; sourceTree = "<group>"; };
+		7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		7E3A0C542618568F00977F78 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7E3A0C692618648B00977F78 /* UserAnnouncementsCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAnnouncementsCardView.xib; sourceTree = "<group>"; };
 		7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsCardViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,10 @@
 		7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactDetailsViewController.swift; sourceTree = "<group>"; };
 		7E508CC22622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityResidentDetailsViewController.swift; sourceTree = "<group>"; };
+		7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAnnouncementDetailsViewController.swift; sourceTree = "<group>"; };
+		7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityNewAnnouncementViewController.swift; sourceTree = "<group>"; };
+		7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementDetailsViewController.swift; sourceTree = "<group>"; };
 		7EE10A0C262037F900BB421C /* Authentication-Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Authentication-Profile.storyboard"; sourceTree = "<group>"; };
 		7EE5F13E261EE7DD0040DE45 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7EE5F163261F41550040DE45 /* AuthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProfileViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +187,8 @@
 				7E3A0C452618398F00977F78 /* SecurityCctvTableViewController.swift */,
 				7E3A0C482618406000977F78 /* SecurityCctvCustomImageView.swift */,
 				7E3A0C4C2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift */,
-				7E3A0C4F2618477600977F78 /* SecurityAnnouncementsTableViewCell.swift */,
+				7E508CDF262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift */,
+				7EBF9D662624573400DD2A8C /* SecurityNewAnnouncementViewController.swift */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 		7E3A0C3C261758D500977F78 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7E3A0C4F2618477600977F78 /* AnnouncementTableViewCell.swift */,
 				7E3A0C3926174AD100977F78 /* SmartSearchMatcher.swift */,
 				7E3A0CF8261C0E6D00977F78 /* ContactViewController.swift */,
 			);
@@ -201,6 +211,8 @@
 				7E3A0C6C261864E000977F78 /* UserAnnouncementsCardViewController.swift */,
 				7E3A0C6F2618936D00977F78 /* UserContactsTableViewController.swift */,
 				7E508CBF2621D92600A3CF80 /* UserContactDetailsViewController.swift */,
+				7EC6EB7B262488C700AA0291 /* UserAnnouncementsTableViewController.swift */,
+				7EC6EB7E26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -299,12 +311,15 @@
 				7E3A0CF9261C0E6D00977F78 /* ContactViewController.swift in Sources */,
 				7E3A0C4D2618475C00977F78 /* SecurityAnnouncementsTableViewController.swift in Sources */,
 				7E3A0C102617112F00977F78 /* AuthViewController.swift in Sources */,
+				7EBF9D672624573400DD2A8C /* SecurityNewAnnouncementViewController.swift in Sources */,
 				7E3A0C702618936D00977F78 /* UserContactsTableViewController.swift in Sources */,
 				7E3A0C432618397A00977F78 /* SecurityCctvTableViewCell.swift in Sources */,
+				7EC6EB7C262488C700AA0291 /* UserAnnouncementsTableViewController.swift in Sources */,
 				7E508CC32622DCE500A3CF80 /* SecurityResidentDetailsViewController.swift in Sources */,
 				7E3A0C31261741AB00977F78 /* SecurityResidentsTableViewController.swift in Sources */,
 				7E508CC02621D92600A3CF80 /* UserContactDetailsViewController.swift in Sources */,
-				7E3A0C502618477600977F78 /* SecurityAnnouncementsTableViewCell.swift in Sources */,
+				7E3A0C502618477600977F78 /* AnnouncementTableViewCell.swift in Sources */,
+				7E508CE0262447DF00A3CF80 /* SecurityAnnouncementDetailsViewController.swift in Sources */,
 				7E3A0C552618568F00977F78 /* UserViewController.swift in Sources */,
 				7E3A0C492618406000977F78 /* SecurityCctvCustomImageView.swift in Sources */,
 				7E3A0C4026175C7400977F78 /* SmartSearchMatcher.swift in Sources */,
@@ -314,6 +329,7 @@
 				29117C482614827C00D5D499 /* SceneDelegate.swift in Sources */,
 				7E3A0C462618398F00977F78 /* SecurityCctvTableViewController.swift in Sources */,
 				7EE5F13F261EE7DD0040DE45 /* DataModel.swift in Sources */,
+				7EC6EB7F26248C3700AA0291 /* UserAnnouncementDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
