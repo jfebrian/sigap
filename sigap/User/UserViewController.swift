@@ -32,6 +32,7 @@ class UserViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.overrideUserInterfaceStyle = .dark
         setupCard()
+        cardViewController.fetchData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,7 +67,6 @@ class UserViewController: UIViewController {
         cardViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
         
         visualEffectView.isUserInteractionEnabled = false
-        
     }
     
     @objc

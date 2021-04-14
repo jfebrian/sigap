@@ -36,6 +36,10 @@ class AuthViewController: UIViewController, UITextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+            tapGesture.cancelsTouchesInView = false
+            view.addGestureRecognizer(tapGesture)
+        
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         switch restorationIdentifier {
@@ -46,6 +50,10 @@ class AuthViewController: UIViewController, UITextFieldDelegate  {
         default:
             break
         }
+    }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
     
     // MARK: - Setup Views

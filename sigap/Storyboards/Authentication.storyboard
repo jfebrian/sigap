@@ -80,21 +80,21 @@
                                 <rect key="frame" x="27.5" y="85.5" width="320" height="496"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EiQ-zO-fzL">
-                                        <rect key="frame" x="10" y="0.0" width="300" height="83"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ig-jX-1ru">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="FIq-gN-lPQ"/>
+                                                    <constraint firstAttribute="width" constant="320" id="FIq-gN-lPQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="color_label"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-Xx-EZB">
-                                                <rect key="frame" x="0.0" y="33" width="300" height="50"/>
+                                                <rect key="frame" x="0.0" y="33" width="320" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="DBd-xk-cJK"/>
+                                                    <constraint firstAttribute="width" constant="320" id="DBd-xk-cJK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <color key="textColor" name="color_label"/>

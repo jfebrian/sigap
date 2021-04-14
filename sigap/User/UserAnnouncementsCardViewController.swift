@@ -45,8 +45,9 @@ class UserAnnouncementsCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
         fetchData()
+        initView()
+        setupView()
         handleBar.layer.cornerRadius = 2.0
     }
     
@@ -84,7 +85,7 @@ class UserAnnouncementsCardViewController: UIViewController {
             fallthrough
         case 2...4:
             secondTitleLabel.text = announcements[1].title
-            secondContentLabel.text = announcements[1].title
+            secondContentLabel.text = announcements[1].content
             secondView.isHidden = false
             secondSeparator.isHidden = false
             fallthrough

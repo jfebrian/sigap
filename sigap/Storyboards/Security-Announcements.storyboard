@@ -42,7 +42,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Announcements" id="Mvj-0t-bwh">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="5CR-GW-wN8"/>
                         <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="69D-49-dLS">
                             <connections>
                                 <segue destination="vFa-tC-Jkn" kind="presentation" id="Fhx-mD-2Xs"/>
@@ -109,9 +108,7 @@
                             <constraint firstItem="oJm-5T-vI3" firstAttribute="top" secondItem="zig-WX-ehx" secondAttribute="top" constant="16" id="ysh-Ea-kjx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cNx-La-OTN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="1Sc-ln-F4S"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="cNx-La-OTN"/>
                     <connections>
                         <outlet property="contentLabel" destination="0Vy-aU-Hg4" id="ES4-Jp-52j"/>
                         <outlet property="dateLabel" destination="8in-Cc-PxE" id="KjG-gN-nna"/>
